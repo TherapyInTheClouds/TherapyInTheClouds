@@ -1,0 +1,14 @@
+@use "./sass/partials/variables" as *;
+@use "./sass/partials/globalStyles";
+@use "./sass/partials/setup";
+
+@use "./sass/partials/landingPage";
+
+
+footer {
+    background-color: green;
+}
+
+ul {
+    background-color: green;
+}
