@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
   
 const Faq = () => { 
     
-    const [showAnswer, SetShowAnswer] = useState(false)
+    const [showAnswer, setShowAnswer] = useState(false)
 
     const displayFaq = () => {
-        showAnswer(!showAnswer)
+        setShowAnswer(!showAnswer)
     }
+
   return (
 
  
@@ -17,11 +18,13 @@ const Faq = () => {
         <h2>Frequently Asked Questions</h2>
       <ul>
         <li>
-          <div className="question">
+          <div  className="question">
             <p>How do I get connected with a therapist?</p>
-            <i class="fa-solid fa-angle-down"></i>
+            <i  onClick={displayFaq} class="fa-solid fa-angle-down"></i>
           </div>
-          <div>
+          {
+            showAnswer ? 
+             <div>
             <p>
               Each person’s journey to therapy is unique. Therapy in the Clouds
               offers potential clients a free 15-minute phone consultation to
@@ -31,6 +34,9 @@ const Faq = () => {
             </p>
             <Link to="bookings">Book A Consult</Link>
           </div>
+          : null
+          }
+         
         </li>
 
         <li>
