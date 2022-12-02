@@ -1,8 +1,11 @@
 //this page will include the booking information again as well as the calnder widget
+import Calendar from "./Calendar";
 
 const Bookings = () => {
   return (
     <div>
+
+      <Calendar/>
       <p>
         Billing information: Please note: Therapy in the Clouds does not provide direct billing to
         insurance providers. Payment for the session is due at the start of the

@@ -1,4 +1,43 @@
 html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
+}
+
+p, a {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(247, 247, 247);
+}
+
+i {
+  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
+  color: rgb(174, 195, 209);
+}
+
+h1 {
+  font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background: rgb(247, 247, 247);
+}
+
+html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -221,18 +260,137 @@ html {
   overflow: hidden;
 }
 
-header {
-  background-color: red;
+header .vidContainer {
+  height: 90vh;
+}
+header .headerContent {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: left;
+  height: 80vh;
+}
+header .headerContent button {
+  width: 15%;
+}
+header h1 {
+  font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
+  width: 70%;
+  text-align: left;
 }
 
-h1 {
-  color: yellow;
+.services {
+  display: flex;
+  min-height: 50vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services .service {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  min-height: 50vh;
+  text-decoration: none;
+  color: black;
+}
+.services .service:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+}
+.services .service button {
+  width: 50%;
+  border: none;
+  padding: 15px;
+}
+.services .service button:hover {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 
-footer {
-  background-color: green;
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.headline p {
+  width: 80%;
+  font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
 }
 
-ul {
-  background-color: green;
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0px;
+}
+.about .approach, .about .qualifications {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  background-color: rgb(250, 250, 250);
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.about .approach i, .about .qualifications i {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+}
+.about .bio {
+  width: 40%;
+}
+.about .bio .headshot {
+  position: fixed;
+}
+.about .bio h2 {
+  text-transform: uppercase;
+}
+.about .bio h3 {
+  font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+}
+
+.faq h2 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
+  background-image: url("../../../assets/headerImageClouds.jpg");
+}
+
+.faqList {
+  list-style-type: none;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.faqList p {
+  font-size: clamp(1.125rem, 1.0556rem + 0.2222vw, 1.25rem);
+}
+.faqList .faqItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.faqList .faqItem .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faqList .faqItem .question p,
+.faqList .faqItem .question i {
+  font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 1.875rem);
+}
+.faqList div {
+  background-color: rgb(241, 241, 241);
+  padding: 15px 50px;
 }/*# sourceMappingURL=styles.css.map */

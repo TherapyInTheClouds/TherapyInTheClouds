@@ -8,6 +8,7 @@ const Footer = () => {
                 <i class="fa-brands fa-instagram"></i>
             </div>
             <button><Link>Get in Touch</Link></button>
+            <Link to="/policy">Privacy Policy</Link>
         </footer>
     )
 }

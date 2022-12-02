@@ -2,9 +2,130 @@
 @use "./mixins" as *;
 
 header {
-    background-color: red;
+
+    // .videoTag {
+    //     width: 100%;
+    //     object-fit: cover;
+
+        
+    // }
+
+    .vidContainer {
+        height: 90vh;
+    }
+ 
+
+
+  .headerContent {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;   
+    align-items: left;
+    height: 80vh;
+
+    button {
+        width: 15%;
+       
+    }
+  }
+
+  h1 {
+    font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
+    width: 70%;
+    text-align: left;
+  }
 }
 
-h1 {
-    color: yellow;
+.services {
+  display: flex;
+  min-height: 50vh;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+
+  .service {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    min-height: 50vh;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+    }
+
+    button {
+      width: 50%;
+      border: none;
+      padding: 15px;
+
+     
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+      }
+    }
+  }
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    
+    p {
+        width: 80%;
+        font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
+    }
+   
+}
+
+//about section styles begin here
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0px;
+
+    .approach, .qualifications {
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        background-color: rgb(250, 250, 250);
+        padding: 0px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        i {
+            font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+        }
+        
+    }
+
+    .bio {
+        width: 40%;
+
+        .headshot {
+            position: fixed;
+        }
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+        }
+    }
 }
