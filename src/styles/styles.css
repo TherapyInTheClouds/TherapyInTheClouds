@@ -262,6 +262,10 @@ html {
   overflow: hidden;
 }
 
+footer img.footerImg {
+  width: 100%;
+}
+
 header {
   background-image: url("../../../assets/headerImageClouds.jpg");
 }
@@ -390,6 +394,10 @@ header h1 {
 }
 .about .bio h3 {
   font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+}
+
+img.footerImg {
+  width: 100%;
 }
 
 .faq h2 {

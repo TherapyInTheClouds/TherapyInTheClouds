@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import badge from "../assets/psychTodayBadge.png"
+import footer from "../assets/cloudFooter.svg"
 
 const Footer = () => {
     return (
         <footer>
+            <img className="footerImg" src={footer} alt="" />
             <div className="wrapper">
                 <a href=""></a>
                 <i className="fa-brands fa-instagram"></i>
