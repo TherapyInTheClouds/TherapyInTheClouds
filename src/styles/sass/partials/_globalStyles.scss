@@ -1,0 +1,44 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h3
+ {
+  font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
+}
+
+p, a {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $lightGrey;
+}
+
+i {
+  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);  
+  color: rgb(157, 190, 213);
+}
+
+h1 {
+    font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
+}
+
+button {
+    border: none;
+    padding: 15px;
+    background: $lightGrey;
+    cursor: pointer;
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
