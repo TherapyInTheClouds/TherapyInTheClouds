@@ -1,49 +1,56 @@
-.faq {
-    h2 {
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
-        background-image: url("../../../assets/headerImageClouds.jpg");
-        
-    }
-}
-.faqList {
-  list-style-type: none;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: space-between;
+@use "./variables" as *;
 
- 
-  p {
-    font-size: clamp(1.125rem, 1.0556rem + 0.2222vw, 1.25rem);
+.faq {
+  h2 {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
+    background-image: url("../../../assets/headerImageClouds.jpg");
   }
 
-  //align-items: center;
-
-  .faqItem {
+  .faqList {
+    list-style-type: none;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    margin: 0 auto;
+    justify-content: space-between;
 
-    .question {
+    .faqItem {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      p,
-      i {
-        font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 1.875rem);
+      flex-direction: column;
+      margin-bottom: 15px;
+      background-color: $otherGrey;
+      padding: 15px 50px;  
+    box-shadow: rgba(33, 35, 38, 0.15) 0px 10px 10px -10px;
+    //box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.3px;
+    //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    //box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+      &:hover {
+        cursor: pointer;
+      }
+   
+
+      .answer { 
+        display: flex;
+          justify-content: center;
+        p {
+         
+          width: 94%;
+        }
+      }
+
+      .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p,
+        i {
+          font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
+        }
       }
     }
-  }
-
-  div {
-    background-color: rgb(241, 241, 241);
-  
-    padding: 15px 50px;
   }
 }

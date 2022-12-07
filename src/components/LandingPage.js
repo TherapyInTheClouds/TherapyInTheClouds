@@ -9,21 +9,20 @@ const LandingPage = () => {
   const showQualIntro = () => setShowMoreQual(!showMoreQual);
   const showApproach = () => setShowMoreApproach(!showMoreApproach);
   const aboutRef = useRef();
-  const scrollInto = () =>
-    aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollInto = () => aboutRef.current?.scrollIntoView({ behavior: "smooth" });
 
   return (
     <>
       <header>
-        <div className="vidContainer" width="100%">
-          <video height="100%" widht="100%" object-fit="cover" className="videoTag" autoPlay loop muted>
+        {/* <div className="vidContainer" width="100%">
+          <video className="clouds" height="100%" widht="100%" object-fit="cover" className="videoTag" autoPlay loop muted>
           <source className="clouds" src={clouds} type="video/mp4" />
         </video>
-        </div>
+        </div> */}
        
 
         <div className="headerContent wrapper">
-          <h1>Insert Tagline Text Here.</h1>
+          <h1>tag line here</h1>
           <button onClick={scrollInto}>Learn More</button>
         </div>
       </header>
@@ -37,8 +36,9 @@ const LandingPage = () => {
         </p>
       </section>
 
-      <section className="about wrapper">
-        <div className="bio">
+      <section className="about">
+        <div className="wrapper about">
+<div className="bio">
           <h2>Meet The Founder</h2>
           <h3>Welcome, my name is Cassandra Fezzuoglio</h3>
           <p>Registered Social Worker, Therapist and Practice Founder</p>
@@ -68,11 +68,18 @@ const LandingPage = () => {
             <i class="fa-solid fa-plus"></i>
           </div>
           {showMoreApproach ? (
+
+            <>
+            <p>Populations I Support</p>
+            <ul>
+              <li>Individuals</li>
+              <li>Youth</li>
+              <li>Adults</li>
+              <li>Couples</li>
+              <li>Families</li>
+            </ul>
             <p>
-              I have experience working with individuals (youth and adults),
-              couples, and families experiencing an array of challenges and
-              stressors, both within the public and private sectors. I practice
-              from an eclectic model of therapy that focuses closely on
+              I practice from an eclectic model of therapy that focuses closely on
               Cognitive Behaviour Therapy (CBT). In CBT, I support you by
               working to challenge your negative thought patterns. This helps to
               deepen our understanding of your emotions and thereby, shift the
@@ -81,14 +88,14 @@ const LandingPage = () => {
               in the ‘what if’ patterns of thinking. I am a firm believer that
               we often need to “feel to  heal,” and through understanding our
               emotions, thoughts and behaviours, we can create conscious spaces
-              for healing and growth. Let’s take therapy off the couch and into
-              the virtual clouds!
+              for healing and growth.
             </p>
+            </>
           ) : null}
 
           <div className="qualifications" onClick={showQualIntro}>
             <h4>Qualifications</h4>
-            <i class="fa-solid fa-plus"></i>
+            <i className="fa-solid fa-plus"></i>
           </div>
 
           {showMoreQual ? (
@@ -111,14 +118,16 @@ const LandingPage = () => {
 
         <div className="headshot">
           <img
-            src="http://placekitten.com/400/500"
+            src="http://placekitten.com/500/700"
             alt="headshot of Therapy In The Clouds Practice Founder, Cassandra Fezzuoglio"
           />
         </div>
+        </div>
+        
       </section>
 
-      <section ref={aboutRef} className=" wrapper">
-        <h2>services</h2>
+      <section ref={aboutRef} className="offering wrapper">
+        <h2>Services</h2>
         <div className="services">
           <Link className="service" to="/Bookings">
             <div>
@@ -134,7 +143,7 @@ const LandingPage = () => {
 
           <Link className="service" to="/Bookings">
             <div>
-              <i class="fa-solid fa-user"></i>
+              <i className="fa-solid fa-user"></i>
               <h3>Individual Counselling Session</h3>
               <p>
                 1-on-1 virtual sessions at 50 minutes in length. Cost of
@@ -146,7 +155,7 @@ const LandingPage = () => {
 
           <Link className="service" to="/Bookings">
             <div>
-              <i class="fa-solid fa-user-group"></i>
+              <i className="fa-solid fa-user-group"></i>
               <h3>Couples Counselling Session</h3>
               <p>
                 A virtual couples sessions at 50 minutes in length. Cost of

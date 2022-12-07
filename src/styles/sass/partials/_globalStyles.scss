@@ -28,7 +28,7 @@ body {
 
 i {
   font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);  
-  color: rgb(174, 195, 209);
+  color: rgb(157, 190, 213);
 }
 
 h1 {
@@ -39,4 +39,6 @@ button {
     border: none;
     padding: 15px;
     background: $lightGrey;
+    cursor: pointer;
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
 }
