@@ -1,0 +1,51 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.policy {
+    .headerImg {
+        position: relative;
+        color: white;
+    }
+    .heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -200%);
+        font-size: clamp(4rem, 5vw, 6rem);
+        text-shadow: 0px 2px 6px #343333;
+    }
+    .subHeading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        font-size: clamp(1.2rem, 1.5vw, 2rem);
+        color: #343333;
+    }
+    .container {
+        margin: -30px auto;
+        width: 70%;
+        max-width: 1200px;
+        box-shadow: 0px 2px 10px #343333;
+        padding: 20px 40px;
+    }
+
+    h3 {
+        color: $primaryColour;
+        font-size: clamp(1.5rem, 2.3vw, 2.5rem);
+        text-shadow: 0.2px 0.5px 0.2px #343333;
+    }
+
+    p {
+        line-height: clamp(1.8rem, 2.3vw, 2.5rem);
+    }
+    .bold {
+        font-weight: 700;
+    }
+    .underline {
+        text-decoration: underline;
+        li {
+            text-decoration: none;
+        }
+    }
+}
