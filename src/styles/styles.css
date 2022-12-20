@@ -266,8 +266,69 @@ footer img.footerImg {
   width: 100%;
 }
 
+.book {
+  width: 90%;
+}
+
+.book {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.book h3 {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(3rem, 3vw, 5rem);
+}
+.book p {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  margin: 0;
+  width: 75%;
+  text-align: center;
+}
+.book .sectionItems {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+.book form {
+  width: 90%;
+  max-width: 600px;
+}
+.book form button {
+  width: 40%;
+  align-content: center;
+  font-size: 2rem;
+}
+.book form label {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.book form input,
+.book form textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  background: transparent;
+}
+.book form .formItem {
+  margin-bottom: 30px;
+  position: relative;
+}
+
 header {
   background-image: url("../../../assets/headerImageClouds.jpg");
+  background-position-y: 20%;
 }
 header .vidContainer {
   height: 90vh;
@@ -394,10 +455,6 @@ header h1 {
 }
 .about .bio h3 {
   font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
-}
-
-img.footerImg {
-  width: 100%;
 }
 
 .faq h2 {

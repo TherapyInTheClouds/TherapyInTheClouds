@@ -1,0 +1,78 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.book {
+    width: 90%;
+}
+
+
+.book {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  
+    h3 {
+      width: 100%;
+      text-align: center;
+      font-size: clamp(3rem, 3vw, 5rem);
+    }
+  
+    p {
+      font-size: clamp(1.6rem, 2vw, 2rem);
+      margin: 0;
+      width: 75%;
+      text-align: center;
+    }
+  
+    .sectionItems {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 20px;
+      width: 50%;
+  
+      
+    }
+   
+  
+      form {
+        width: 90%;
+        max-width: 600px;
+  
+        button {
+          
+          width: 40%;
+          align-content: center;
+          font-size: 2rem;
+        }
+        label {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px;
+        
+        }
+  
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          outline: 0;
+          
+          background: transparent;
+        }
+  
+        .formItem {
+          margin-bottom: 30px;
+          position: relative;
+        }
+      
+    }
+  }

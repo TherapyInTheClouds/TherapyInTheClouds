@@ -45,9 +45,7 @@ const LandingPage = () => {
 
           <p>
             I started Therapy in the Clouds because my goal is to shake up how
-            we view therapy, and what it can truly be. At Therapy in the Clouds,
-            we offer virtual psychotherapy and counselling services to clients
-            in the province of Ontario. As humans, we grow and flourish when we
+            we view therapy, and what it can truly be. As humans, we grow and flourish when we
             find ourselves in unfamiliar spaces. I truly believe both the art
             and science of therapy provides a space to nourish this growth by
             acknowledging and deconstructing our emotions, thoughts, and
@@ -56,9 +54,7 @@ const LandingPage = () => {
 
           <p>
             I work with individuals experiencing challenges with self-esteem,
-            self-compassion, and self- doubt. We work together to unpack where
-            you first picked up the lens in which you see yourself today, to
-            change how you view yourself tomorrow. I often work with my clients
+            self-compassion, and self- doubt. I often work with my clients
             to support them in dissecting the relationships they have with
             others. However, the journey of therapy truly begins with the
             exploration of the relationship we have with ourselves.
