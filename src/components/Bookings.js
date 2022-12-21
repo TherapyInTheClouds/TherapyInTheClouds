@@ -4,9 +4,15 @@
 const Bookings = () => {
   return (
     <section className="book  wrapper">
-      <h3>GET IN TOUCH</h3>
-      <p>use the form below to send me an email about any questions you may have or clikc book now to schedule a timeslot directly</p>
+      <div className="sectionContent">
+      <div className="getInTouch">
+     <h3>Ready to get started? Send us an email with any questions or schedule your first session below. </h3>
+     <button> <a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a>  </button>
+      </div>
 
+      <div className="formContainer">
+      <h4>Get in touch</h4>
+      <p>Getting starting with therapy is rarely easy. We're happy to answer any questions you may have.</p>
       <form 
         action="https://formsubmit.co/cassandra@therapyintheclouds.ca"
         method="POST"
@@ -46,23 +52,31 @@ const Bookings = () => {
         </div>
         <button type="submit">Send</button>
       </form>
-      <p>
-        Billing information: Please note: Therapy in the Clouds does not provide
+        
+        
+      </div>
+      </div>
+     
+      
+    <div className="billingPolicies">
+          <p>
+      Please note: Therapy in the Clouds does not provide
         direct billing to insurance providers. Payment for the session is due at
         the start of the session.  Clients will be provided with a receipt for
         service, including the therapist’s name, designation, and registration
         number. Payment is accepted by e-transfer only to
-        cassandra@therapyintheclouds.ca
+        <span> cassandra@therapyintheclouds.ca</span>
       </p>
 
       <p>
-        Cancellation and missed session policy: Please be advised that each
+        Please be advised that each
         client session is scheduled specifically for you, thus we ask you
         provide a minimum of 24-hour notice if you are requesting to reschedule
         or cancel your appointment.  If such notice is not received a minimum of
         24 hours prior to the session start time, the full fee is required for
         the session.
       </p>
+        </div>
     </section>
   );
 };

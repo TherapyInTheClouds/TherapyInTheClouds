@@ -1,30 +1,69 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-.book {
-    width: 90%;
-}
+
 
 
 .book {
-    height: 100vh;
+
+  button:hover {  
+      transform: translateY(-7px);
+    
+  }
+  background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+
+
+    .sectionContent {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 100px 0 20px 0px;
+    }
+
+    .getInTouch {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: flex-start;
+
+      button {
+         width: 40%;
+         border-radius: 20px;
+         padding: 20px 0px;
+         background-color: $blue;
+         font-size: 2rem;
+      }
+      
+
+      h3 {
+        font-size: clamp(3rem, 3vw, 4rem);
+        text-align: left;
+  
+      }
+    }
   
   
     h3 {
       width: 100%;
       text-align: center;
-      font-size: clamp(3rem, 3vw, 5rem);
+      font-size: clamp(3rem, 3vw, 4rem);
     }
   
     p {
-      font-size: clamp(1.6rem, 2vw, 2rem);
-      margin: 0;
-      width: 75%;
+      font-size: clamp(1rem, 2vw, 1.2rem);
       text-align: center;
+      width: 90%;
+      text-align: left;
+
+      span {
+        color: rgb(74, 129, 144);
+      }
+
     }
   
     .sectionItems {
@@ -36,14 +75,10 @@
       justify-content: center;
       gap: 20px;
       width: 50%;
-  
-      
     }
    
   
       form {
-        width: 90%;
-        max-width: 600px;
   
         button {
           
@@ -65,7 +100,8 @@
           width: 100%;
           padding: 10px;
           outline: 0;
-          
+          border: 0.5px solid black;
+          border-radius: 10px;
           background: transparent;
         }
   
@@ -76,3 +112,24 @@
       
     }
   }
+
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+   
+    h4 {
+      font-size: 3rem;
+      margin: 0
+    }
+    
+  }
+  .billingPolicies {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }

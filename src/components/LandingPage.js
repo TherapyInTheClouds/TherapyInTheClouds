@@ -22,7 +22,7 @@ const LandingPage = () => {
        
 
         <div className="headerContent wrapper">
-          <h1>tag line here</h1>
+          <h1>Your path to wellness starts here.</h1>
           <button onClick={scrollInto}>Learn More</button>
         </div>
       </header>
@@ -66,26 +66,16 @@ const LandingPage = () => {
           {showMoreApproach ? (
 
             <>
-            <p>Populations I Support</p>
-            <ul>
-              <li>Individuals</li>
-              <li>Youth</li>
-              <li>Adults</li>
-              <li>Couples</li>
-              <li>Families</li>
-            </ul>
+          
             <p>
               I practice from an eclectic model of therapy that focuses closely on
-              Cognitive Behaviour Therapy (CBT). In CBT, I support you by
-              working to challenge your negative thought patterns. This helps to
-              deepen our understanding of your emotions and thereby, shift the
-              actions you choose to take and those you may avoid. I often work
-              alongside individuals living with anxiety, who may find themselves
-              in the ‘what if’ patterns of thinking. I am a firm believer that
-              we often need to “feel to  heal,” and through understanding our
-              emotions, thoughts and behaviours, we can create conscious spaces
+              Cognitive Behavioural Therapy (CBT). I support you by
+              working to challenge your negative thought patterns in order to
+              deepen our understanding of your emotions and thereby shift your actions.
+              I am a firm believer that we often need to “feel to  heal,” and through understanding ourselves, we can create conscious spaces
               for healing and growth.
             </p>
+            <p>Populations I support : Individuals, youth, adults, couples & families.</p>
             </>
           ) : null}
 
@@ -123,7 +113,7 @@ const LandingPage = () => {
       </section>
 
       <section ref={aboutRef} className="offering wrapper">
-        <h2>Services</h2>
+        <h2>Our Services</h2>
         <div className="services">
           <Link className="service" to="/Bookings">
             <div>
@@ -137,7 +127,7 @@ const LandingPage = () => {
             </div>
           </Link>
 
-          <Link className="service" to="/Bookings">
+          <div className="service" >
             <div>
               <i className="fa-solid fa-user"></i>
               <h3>Individual Counselling Session</h3>
@@ -145,21 +135,21 @@ const LandingPage = () => {
                 1-on-1 virtual sessions at 50 minutes in length. Cost of
                 session: $175.00
               </p>
-              <button>Book Now</button>
+              <button><a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a></button>
             </div>
-          </Link>
+          </div>
 
-          <Link className="service" to="/Bookings">
-            <div>
+          <div className="service">
+            <div >
               <i className="fa-solid fa-user-group"></i>
               <h3>Couples Counselling Session</h3>
               <p>
                 A virtual couples sessions at 50 minutes in length. Cost of
                 session: $185.00
               </p>
-              <button>Book Now</button>
+              <button> <a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a></button>
             </div>
-          </Link>
+          </div>
         </div>
       </section>
     </>
