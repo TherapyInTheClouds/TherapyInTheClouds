@@ -1,0 +1,135 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+
+
+
+.book {
+
+  button:hover {  
+      transform: translateY(-7px);
+    
+  }
+  background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+
+
+    .sectionContent {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 100px 0 20px 0px;
+    }
+
+    .getInTouch {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: flex-start;
+
+      button {
+         width: 40%;
+         border-radius: 20px;
+         padding: 20px 0px;
+         background-color: $blue;
+         font-size: 2rem;
+      }
+      
+
+      h3 {
+        font-size: clamp(3rem, 3vw, 4rem);
+        text-align: left;
+  
+      }
+    }
+  
+  
+    h3 {
+      width: 100%;
+      text-align: center;
+      font-size: clamp(3rem, 3vw, 4rem);
+    }
+  
+    p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      text-align: center;
+      width: 90%;
+      text-align: left;
+
+      span {
+        color: rgb(74, 129, 144);
+      }
+
+    }
+  
+    .sectionItems {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 20px;
+      width: 50%;
+    }
+   
+  
+      form {
+  
+        button {
+          
+          width: 40%;
+          align-content: center;
+          font-size: 2rem;
+        }
+        label {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px;
+        
+        }
+  
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          outline: 0;
+          border: 0.5px solid black;
+          border-radius: 10px;
+          background: transparent;
+        }
+  
+        .formItem {
+          margin-bottom: 30px;
+          position: relative;
+        }
+      
+    }
+  }
+
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+   
+    h4 {
+      font-size: 3rem;
+      margin: 0
+    }
+    
+  }
+  .billingPolicies {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }

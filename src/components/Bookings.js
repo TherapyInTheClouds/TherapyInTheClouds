@@ -1,28 +1,83 @@
 //this page will include the booking information again as well as the calnder widget
-import Calendar from "./Calendar";
+
 
 const Bookings = () => {
   return (
-    <div>
+    <section className="book  wrapper">
+      <div className="sectionContent">
+      <div className="getInTouch">
+     <h3>Ready to get started? Send us an email with any questions or schedule your first session below. </h3>
+     <button> <a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a>  </button>
+      </div>
 
+      <div className="formContainer">
+      <h4>Get in touch</h4>
+      <p>Getting starting with therapy is rarely easy. We're happy to answer any questions you may have.</p>
+      <form 
+        action="https://formsubmit.co/cassandra@therapyintheclouds.ca"
+        method="POST"
+      >
+        <label for="_captcha"></label>
+        <input type="hidden" name="_captcha" value="false" />
+
+        <label for="_next"></label>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://therapyintheclouds.ca/pages/thanks.html"
+        />
+        <div class="formItem">
+          <label for="name">Name</label>
+          <input className="name" type="text" id="name" name="name" required />
+        </div>
+
+        <div class="formItem">
+          <label for="pronouns">Pronouns</label>
+          <input class="proouns" type="text" id="pronouns" name="pronouns" />
+        </div>
+
+        <div class="formItem">
+          <label for="number">Phone Number</label>
+          <input class="number" type="tel" id="number" name="number" />
+        </div>
+
+        <div class="formItem">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="formItem">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="20" rows="10"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+        
+        
+      </div>
+      </div>
+     
       
-      <p>
-        Billing information: Please note: Therapy in the Clouds does not provide direct billing to
-        insurance providers. Payment for the session is due at the start of the
-        session.  Clients will be provided with a receipt for service, including
-        the therapist’s name, designation, and registration number. Payment is
-        accepted by e-transfer only to cassandra@therapyintheclouds.ca
+    <div className="billingPolicies">
+          <p>
+      Please note: Therapy in the Clouds does not provide
+        direct billing to insurance providers. Payment for the session is due at
+        the start of the session.  Clients will be provided with a receipt for
+        service, including the therapist’s name, designation, and registration
+        number. Payment is accepted by e-transfer only to
+        <span> cassandra@therapyintheclouds.ca</span>
       </p>
 
       <p>
-         Cancellation and missed session policy: Please be
-        advised that each client session is scheduled specifically for you, thus
-        we ask you provide a minimum of 24-hour notice if you are requesting to
-        reschedule or cancel your appointment.  If such notice is not received a
-        minimum of 24 hours prior to the session start time, the full fee is
-        required for the session.
+        Please be advised that each
+        client session is scheduled specifically for you, thus we ask you
+        provide a minimum of 24-hour notice if you are requesting to reschedule
+        or cancel your appointment.  If such notice is not received a minimum of
+        24 hours prior to the session start time, the full fee is required for
+        the session.
       </p>
-    </div>
+        </div>
+    </section>
   );
 };
 

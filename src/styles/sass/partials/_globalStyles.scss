@@ -41,4 +41,10 @@ button {
     background: $lightGrey;
     cursor: pointer;
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    transition: all .3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

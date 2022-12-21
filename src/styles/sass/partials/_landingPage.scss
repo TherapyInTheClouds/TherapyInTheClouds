@@ -3,6 +3,7 @@
 
 header {
   background-image: url("../../../assets/headerImageClouds.jpg");
+  background-position-y: 20%;
   .vidContainer {
     height: 90vh;
   }
@@ -18,6 +19,13 @@ header {
     button {
       width: 15%;
       font-size: clamp(1.25rem, 0.8333rem + 1.3333vw, 2rem);
+      box-shadow: 0px 5px 10px rgba(61, 61, 61, 0.1);
+      transition: all .4s ease;
+     
+      &:hover {
+        
+        transform: translateY(-7px);
+      }
     }
   }
 
@@ -139,6 +147,10 @@ header {
   .bio {
     width: 40%;
 
+    li {
+      font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    }
+
     .headshot {
       position: fixed;
     }
@@ -150,9 +162,12 @@ header {
     h3 {
       font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
     }
+
+    h4 {
+      font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+      text-transform: uppercase;
+      font-weight: 400;
+    }
   }
 }
 
-img.footerImg {
-    width: 100%;
-}
