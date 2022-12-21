@@ -37,6 +37,12 @@ button {
   background: rgb(247, 247, 247);
   cursor: pointer;
   font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 html {
@@ -267,26 +273,52 @@ footer img.footerImg {
 }
 
 .book {
-  width: 90%;
-}
-
-.book {
-  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.book button:hover {
+  transform: translateY(-7px);
+}
+.book .sectionContent {
+  display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 100px 0 20px 0px;
+}
+.book .getInTouch {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: flex-start;
+}
+.book .getInTouch button {
+  width: 40%;
+  border-radius: 20px;
+  padding: 20px 0px;
+  background-color: #C1CFD8;
+  font-size: 2rem;
+}
+.book .getInTouch h3 {
+  font-size: clamp(3rem, 3vw, 4rem);
+  text-align: left;
 }
 .book h3 {
   width: 100%;
   text-align: center;
-  font-size: clamp(3rem, 3vw, 5rem);
+  font-size: clamp(3rem, 3vw, 4rem);
 }
 .book p {
-  font-size: clamp(1.6rem, 2vw, 2rem);
-  margin: 0;
-  width: 75%;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   text-align: center;
+  width: 90%;
+  text-align: left;
+}
+.book p span {
+  color: rgb(74, 129, 144);
 }
 .book .sectionItems {
   height: 60vh;
@@ -297,10 +329,6 @@ footer img.footerImg {
   justify-content: center;
   gap: 20px;
   width: 50%;
-}
-.book form {
-  width: 90%;
-  max-width: 600px;
 }
 .book form button {
   width: 40%;
@@ -319,11 +347,31 @@ footer img.footerImg {
   width: 100%;
   padding: 10px;
   outline: 0;
+  border: 0.5px solid black;
+  border-radius: 10px;
   background: transparent;
 }
 .book form .formItem {
   margin-bottom: 30px;
   position: relative;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.formContainer h4 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.billingPolicies {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
@@ -344,6 +392,11 @@ header .headerContent {
 header .headerContent button {
   width: 15%;
   font-size: clamp(1.25rem, 0.8333rem + 1.3333vw, 2rem);
+  box-shadow: 0px 5px 10px rgba(61, 61, 61, 0.1);
+  transition: all 0.4s ease;
+}
+header .headerContent button:hover {
+  transform: translateY(-7px);
 }
 header h1 {
   font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
@@ -447,6 +500,9 @@ header h1 {
 .about .bio {
   width: 40%;
 }
+.about .bio li {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
 .about .bio .headshot {
   position: fixed;
 }
@@ -455,6 +511,11 @@ header h1 {
 }
 .about .bio h3 {
   font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+}
+.about .bio h4 {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .faq h2 {
