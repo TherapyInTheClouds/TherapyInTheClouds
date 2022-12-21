@@ -15,7 +15,7 @@ function App() {
         <Route path='/' element={< LandingPage/>}/>
         <Route path='/bookings' element={< Bookings/>}/>
         <Route exact path='/faq' element={< Faq/>}/>
-        <Route path='/policy' elemtn={<Policy/>}/>
+        <Route path='/policy' element={<Policy/>}/>
       </Routes>
      
       
