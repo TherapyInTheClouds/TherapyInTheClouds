@@ -39,6 +39,11 @@
     p {
         line-height: clamp(1.8rem, 2.3vw, 2.5rem);
     }
+
+    ol, ul {
+        font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+        line-height: clamp(1.8rem, 2.3vw, 2.5rem);
+    }
     .bold {
         font-weight: 700;
     }
@@ -47,5 +52,10 @@
         li {
             text-decoration: none;
         }
+    }
+    .address {
+        list-style: none;
+        text-align: center;
+        padding: 0px;
     }
 }

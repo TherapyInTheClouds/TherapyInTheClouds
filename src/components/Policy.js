@@ -200,7 +200,7 @@ const Policy = () => {
                 </p>
 
                 <h3>Information and Privacy Commissioner of Ontario</h3>
-                <ul>
+                <ul className="address">
                     <li>1-800-387-0073</li>
                     <li>https://www.ipc.on.ca/about-us/contact-us/</li>
                     <li>2 Bloor Street East,</li>
