@@ -4,7 +4,7 @@
 footer {
     margin-top: 80px;
     padding-top: 120px;
-    background-image: url(../../../assets/footerWaveThree.svg);
+    background-image: url(../../../assets/cloudFooterNew.svg);
     background-size: cover;
     height: 65vh;
     div {
@@ -37,9 +37,9 @@ footer {
                     border-radius: 50px;
                     padding: 10px;
                     margin: 5px;
-                    background-color: $primaryColour;
+                    background-color: $secondaryColour;
                     a {
-                        color: $whiteColour;
+                        color: $fontColour;
                     }
                     &:hover {
                         background-color: $secondaryColour;
@@ -75,11 +75,11 @@ footer {
             margin-right: 80px;
             h4 {
                 width: 100%;
-                font-size: 2.5rem;
+                font-size: 3rem;
                 font-family: 'Nunito';
                 margin-bottom: 0px;
-                color: $whiteColour;
-                text-shadow: 1.5px 2.5px 0.5px #343333;
+                color: $fontColour;
+                //text-shadow: 1.5px 2.5px 0.5px #343333;
                 letter-spacing: 0.9px;
             }
             input {
@@ -89,8 +89,8 @@ footer {
                 border-radius: 10px;
                 font-size: 1.35rem;
                 font-family: 'Nunito';
-                background-color: $primaryColour;
-                color: $whiteColour;
+                background-color: $secondaryColour;
+                color: $fontColour;
             }
             textarea {
                 width: calc(100% - 10px);
@@ -98,18 +98,18 @@ footer {
                 padding: 10px;
                 font-size: 1.35rem;
                 font-family: 'Nunito';
-                background-color: $primaryColour;
-                color: $whiteColour;
+                background-color: $secondaryColour;
+                color: $fontColour;
             }
             button {
-                border: 3px solid $primaryColour;
+                border: 3px solid $secondaryColour;
                 margin-top: 15px;
                 border-radius: 15px;
                 padding: 0px 10px;
                 font-size: 1.35rem;
                 font-family: 'Nunito';
-                background-color: $primaryColour;
-                color: $whiteColour;
+                background-color: $secondaryColour;
+                color: $fontColour;
                 font-weight: 700;
                 &:hover {
                     background-color: $secondaryColour;

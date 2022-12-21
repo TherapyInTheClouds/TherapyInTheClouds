@@ -1,10 +1,9 @@
-import headerImage from "../assets/wave.svg"
+import headerImage from "../assets/headerImageClouds.jpg"
 
 const Policy = () => {
     return (
         <section className="policy">
             <div className="headerImg">
-                <img src={headerImage} alt="" />
                 <h2 className="heading">Privacy Policy</h2>
                 <p className="subHeading">Last modified December 08, 2022</p>
             </div>

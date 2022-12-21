@@ -88,7 +88,8 @@ header {
       align-items: center;
 
       i {
-        font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);  
+        font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem); 
+        color: $primaryColour; 
       }
 
       h3, p {
@@ -141,6 +142,7 @@ header {
 
     i {
       font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+      color: $primaryColour;
     }
   }
 

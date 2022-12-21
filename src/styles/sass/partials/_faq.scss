@@ -50,6 +50,9 @@
         i {
           font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
         }
+        i {
+          color: $primaryColour;
+        }
       }
     }
   }

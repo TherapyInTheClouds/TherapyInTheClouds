@@ -3,27 +3,31 @@
 
 .policy {
     .headerImg {
-        position: relative;
-        color: $whiteColour;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
+        background-image: url("../../../assets/headerImageClouds.jpg");
     }
     .heading {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -200%);
-        font-size: clamp(4rem, 5vw, 6rem);
-        // text-shadow: 0px 2px 6px #343333;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -200%);
+        // font-size: clamp(4rem, 5vw, 6rem);
+        // // text-shadow: 0px 2px 6px #343333;
     }
     .subHeading {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -80%);
+        transform: translate(-50%, -100%);
         font-size: clamp(1.2rem, 1.5vw, 2rem);
         color: $fontColour;
     }
     .container {
-        margin: -30px auto;
+        margin: 30px auto;
         width: 70%;
         max-width: 1200px;
         box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
