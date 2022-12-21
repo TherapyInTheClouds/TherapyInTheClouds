@@ -10,7 +10,7 @@
       transform: translateY(-7px);
     
   }
-  background-color: white;
+  background-color: $whiteColour;
     padding: 20px;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -35,7 +35,7 @@
          width: 40%;
          border-radius: 20px;
          padding: 20px 0px;
-         background-color: $blue;
+         background-color: $primaryColour;
          font-size: 2rem;
       }
       
@@ -61,7 +61,7 @@
       text-align: left;
 
       span {
-        color: rgb(74, 129, 144);
+        color: $primaryColour
       }
 
     }

@@ -4,7 +4,7 @@
 .policy {
     .headerImg {
         position: relative;
-        color: white;
+        color: $whiteColour;
     }
     .heading {
         position: absolute;
@@ -12,7 +12,7 @@
         left: 50%;
         transform: translate(-50%, -200%);
         font-size: clamp(4rem, 5vw, 6rem);
-        text-shadow: 0px 2px 6px #343333;
+        // text-shadow: 0px 2px 6px #343333;
     }
     .subHeading {
         position: absolute;
@@ -20,20 +20,20 @@
         left: 50%;
         transform: translate(-50%, -80%);
         font-size: clamp(1.2rem, 1.5vw, 2rem);
-        color: #343333;
+        color: $fontColour;
     }
     .container {
         margin: -30px auto;
         width: 70%;
         max-width: 1200px;
-        box-shadow: 0px 2px 10px #343333;
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
         padding: 20px 40px;
     }
 
     h3 {
         color: $primaryColour;
         font-size: clamp(1.5rem, 2.3vw, 2.5rem);
-        text-shadow: 0.2px 0.5px 0.2px #343333;
+        //text-shadow: 0.2px 0.5px 0.2px #343333;
     }
 
     p {
