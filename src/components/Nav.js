@@ -7,9 +7,9 @@ const Nav = () => {
             <li>
                <img className="logo" src="" alt="" />
             </li>
-            <li><Link to="/"><p>Home</p></Link></li>
-            <li><Link to="/bookings"><p>Booking</p></Link></li>
-            <li><Link to="/faq"><p>FAQ</p></Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/bookings">Booking</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
          </ul>
       </nav>
    )

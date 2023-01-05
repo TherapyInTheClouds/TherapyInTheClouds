@@ -9,108 +9,45 @@ header {
   }
 
   .headerContent {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    align-items: left;
+    @include flex(column, center, left);
     height: 80vh;
-
-    button {
-      width: 15%;
-      font-size: clamp(1.25rem, 0.8333rem + 1.3333vw, 2rem);
-      box-shadow: 0px 5px 10px rgba(61, 61, 61, 0.1);
-      transition: all .4s ease;
-     
-      &:hover {
-        
-        transform: translateY(-7px);
-      }
-    }
-  }
-
-  h1 {
-    font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
-    width: 70%;
-    text-align: left;
   }
 }
 
+// landing page banner
+
 .headline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center);
   height: 25vh;
 
   p {
     width: 80%;
-    font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
   }
 }
 
-//services section here
+// services section here
 
 .offering {
+  @include flex(column, space-evenly);
   min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  h2 {
-    font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
-    text-align: center;
-  }
 }
+
 .services {
-  display: flex;
+  @include flex(row, space-evenly, center);
   min-height: 50vh;
-  justify-content: space-evenly;
-  align-items: center;
 
   .service {
+    @include flex(row, normal, center);
     width: 25%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: $whiteColour;
-    border-radius: 20px;
-    padding: 0px 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     min-height: 50vh;
-    text-decoration: none;
-    color: $fontColour;
 
     div {
+      @include flex(column, space-evenly, center);
       height: 30vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-
-      i {
-        font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem); 
-        color: $primaryColour; 
-      }
-
-      h3, p {
-        margin: 0;
-        padding: 0;
-      }
-    }
-
-    &:hover {
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-        rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
     }
 
     button {
       width: 50%;
-      border: none;
-      padding: 15px;
-
-      &:hover {
-        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-      }
     }
   }
 }
@@ -118,57 +55,27 @@ header {
 //about section styles begin here
 
 .about {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  @include flex(row, space-evenly, center);
   padding: 50px 0px;
   min-height: 80vh;
   background-color: $tertiaryColour;
 
-  h3 {
-    margin: 5px 0px;
-  }
-
+  // CHANGE THIS TO A DROPDOWN SECTION -- CREATE DROPDOWN IN GLOBAL STYLES
   .approach,
   .qualifications {
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-    background-color: $whiteColour;
-    padding: 0px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, space-between, center);
+    // box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    // background-color: $whiteColour;
+    // padding: 0px 30px;
     margin-bottom: 10px;
     cursor: pointer;
-
-    i {
-      font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
-      color: $primaryColour;
-    }
   }
 
   .bio {
     width: 40%;
 
-    li {
-      font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-    }
-
     .headshot {
       position: fixed;
-    }
-
-    h2 {
-      text-transform: uppercase;
-    }
-
-    h3 {
-      font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
-    }
-
-    h4 {
-      font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-      text-transform: uppercase;
-      font-weight: 400;
     }
   }
 }

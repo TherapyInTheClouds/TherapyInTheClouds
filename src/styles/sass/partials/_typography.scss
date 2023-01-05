@@ -8,32 +8,88 @@ html {
 }
 
 h1 {
+    // from landing page
     font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
+    text-align: left;
+    font-weight: 500;
 }
 
 h2 {
-
+    // from landing page
+    font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
+    text-align: center;
+    // from landing page
+    text-transform: uppercase;
 }
 
 h3 {
+    // from global styles
     font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
+    // from landing page 
+    // font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+    // from bookings page
+    // font-size: clamp(3rem, 3vw, 4rem);
+    // text-align: left;
+}
+
+h4 {
+    // from landing page
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    text-transform: uppercase;
+    font-weight: 400;
+    // from bookings page
+    // font-size: 3rem;
 }
 
 p {
+    // from global styles
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    // From landing page
+    //font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
+    // from bookings page
+    // font-size: clamp(1rem, 2vw, 1.2rem);
+    // text-align: left;
 }
 
-i {
-    font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
-    color: $secondaryColour;
+li {
+    // from landing page
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
 }
 
 a {
+    // from global styles
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-    text-decoration: none;
     color: $fontColour;
 }
 
+nav a {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+i {
+    // from global styles
+    font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
+    // from landing page
+    // font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);
+    // from landing page about section
+    // font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+    color: $primaryColour;
+}
+
+span {
+    color: $primaryColour
+}
+
 button {
+    // From GlobalStyles
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    // From landing Page
+    // font-size: clamp(1.25rem, 0.8333rem + 1.3333vw, 2rem);
+    // from bookings page
+    // font-size: 2rem;
+}
+
+.centered {
+    text-align: center;
 }

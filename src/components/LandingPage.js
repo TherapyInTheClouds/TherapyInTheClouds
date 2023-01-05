@@ -59,7 +59,7 @@ const LandingPage = () => {
             others. However, the journey of therapy truly begins with the
             exploration of the relationship we have with ourselves.
           </p>
-          <div className="approach" onClick={showApproach}>
+          <div className="approach container" onClick={showApproach}>
             <h4>Therapeutic Approach</h4>
             <i class="fa-solid fa-plus"></i>
           </div>
@@ -79,7 +79,7 @@ const LandingPage = () => {
             </>
           ) : null}
 
-          <div className="qualifications" onClick={showQualIntro}>
+          <div className="qualifications container" onClick={showQualIntro}>
             <h4>Qualifications</h4>
             <i className="fa-solid fa-plus"></i>
           </div>
@@ -115,7 +115,7 @@ const LandingPage = () => {
       <section ref={aboutRef} className="offering wrapper">
         <h2>Our Services</h2>
         <div className="services">
-          <Link className="service" to="/Bookings">
+          <Link className="container service centered" to="/Bookings">
             <div>
               <i class="fa-solid fa-phone"></i>
               <h3>Free 15 Minute Phone Consultation</h3>
@@ -127,7 +127,7 @@ const LandingPage = () => {
             </div>
           </Link>
 
-          <div className="service" >
+          <div className="container service centered" >
             <div>
               <i className="fa-solid fa-user"></i>
               <h3>Individual Counselling Session</h3>
@@ -139,7 +139,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="service">
+          <div className="container service centered">
             <div >
               <i className="fa-solid fa-user-group"></i>
               <h3>Couples Counselling Session</h3>
