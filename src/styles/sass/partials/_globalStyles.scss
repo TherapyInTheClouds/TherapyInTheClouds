@@ -2,7 +2,6 @@
 @use "./mixins" as *;
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -12,39 +11,14 @@ html {
   margin: 0 auto;
 }
 
-h3
- {
-  font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
-}
-
-p, a {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-}
-
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: $secondaryColour;
-}
-
-i {
-  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);  
-  color: $secondaryColour;
-}
-
-h1 {
-    font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
+  background-color: $secondaryColour;
 }
 
 button {
-    border: none;
-    padding: 15px;
-    background: $secondaryColour;
-    cursor: pointer;
-    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-    transition: all .3s ease;
-}
-
-a {
-  text-decoration: none;
-  color: $fontColour;
+  border: none;
+  padding: 15px;
+  background: $secondaryColour;
+  cursor: pointer;
+  transition: all .3s ease;
 }

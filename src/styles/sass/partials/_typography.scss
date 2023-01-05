@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+html {
+    font-family: $mainFont;
+    /* 20px default font size @ 125% */
+    font-size: 62.5%;
+    color: $fontColour;
+}
+
+h1 {
+    font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
+}
+
+h2 {
+
+}
+
+h3 {
+    font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
+}
+
+p {
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
+
+i {
+    font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
+    color: $secondaryColour;
+}
+
+a {
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    text-decoration: none;
+    color: $fontColour;
+}
+
+button {
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
