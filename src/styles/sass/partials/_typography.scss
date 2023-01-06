@@ -30,6 +30,8 @@ h3 {
     // from bookings page
     // font-size: clamp(3rem, 3vw, 4rem);
     // text-align: left;
+    // from policy page
+    // font-size: clamp(1.5rem, 2.3vw, 2.5rem);
 }
 
 h4 {
@@ -44,6 +46,7 @@ h4 {
 p {
     // from global styles
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    line-height: clamp(1.8rem, 2.3vw, 2.5rem);
     // From landing page
     //font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
     // from bookings page
@@ -51,9 +54,18 @@ p {
     // text-align: left;
 }
 
+ol, ul {
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    line-height: clamp(1.8rem, 2.3vw, 2.5rem);
+}
+
 li {
     // from landing page
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
+
+footer p, footer li {
+    font-size: 1rem;
 }
 
 a {
@@ -90,6 +102,19 @@ button {
     // font-size: 2rem;
 }
 
+input, textarea {
+    font-size: 1.35rem;
+    font-family: 'Nunito';
+}
+
 .centered {
     text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
 }

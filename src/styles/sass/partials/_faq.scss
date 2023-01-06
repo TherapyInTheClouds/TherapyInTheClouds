@@ -12,42 +12,36 @@
     @include flex(column, space-between);
     width: 80%;
     margin: 0 auto;
+  }
 
-    .faqItem {
-      @include flex(column);
-      margin-bottom: 15px;
-      background-color: $tertiaryColour;
-      padding: 15px 50px;  
-      box-shadow: rgba(33, 35, 38, 0.15) 0px 10px 10px -10px;
-      //box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.3px;
-      //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-      //box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-      &:hover {
-        cursor: pointer;
-      }
+  .faqItem {
+    @include flex(column);
+    margin-bottom: 15px;
+    background-color: $tertiaryColour;
+    padding: 15px 50px;  
+    box-shadow: $listShadow;
+    //box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.3px;
+    //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    //box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
    
+  .answer {
+    @include flex(row, center);
+    p {
+      width: 94%;
+    }
+  }
 
-      .answer { 
-        display: flex;
-          justify-content: center;
-        p {
-         
-          width: 94%;
-        }
-      }
-
-      .question {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        p,
-        i {
-          font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
-        }
-        i {
-          color: $primaryColour;
-        }
-      }
+  .question {
+    @include flex(row, space-between, center);
+    p, i {
+      font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
+    }
+    i {
+      color: $primaryColour;
     }
   }
 }
