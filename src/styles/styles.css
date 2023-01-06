@@ -221,11 +221,14 @@ html {
   overflow: hidden;
 }
 
-html {
-  font-family: "Montserrat";
+body {
+  font-family: "Montserrat", sans-serif;
   /* 20px default font size @ 125% */
-  font-size: 62.5%;
   color: #000;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 h1 {
@@ -242,6 +245,10 @@ h2 {
 
 h3 {
   font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
+}
+
+.bio h3 {
+  font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
 }
 
 h4 {

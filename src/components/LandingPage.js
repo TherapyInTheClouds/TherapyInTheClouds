@@ -39,7 +39,7 @@ const LandingPage = () => {
       <section className="about">
         <div className="wrapper about">
 <div className="bio">
-          <h2>Meet The Founder</h2>
+          <h4>Meet The Founder</h4>
           <h3>Welcome, my name is Cassandra Fezzuoglio</h3>
           <p>Registered Social Worker, Therapist and Practice Founder</p>
 

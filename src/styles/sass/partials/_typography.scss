@@ -1,10 +1,13 @@
 @use "variables" as *;
 
-html {
+body {
     font-family: $mainFont;
     /* 20px default font size @ 125% */
-    font-size: 62.5%;
     color: $fontColour;
+}
+
+html {
+     font-size: 62.5%;
 }
 
 h1 {
@@ -26,7 +29,7 @@ h3 {
     // from global styles
     font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
     // from landing page 
-    // font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+    
     // from bookings page
     // font-size: clamp(3rem, 3vw, 4rem);
     // text-align: left;
@@ -34,6 +37,9 @@ h3 {
     // font-size: clamp(1.5rem, 2.3vw, 2.5rem);
 }
 
+.bio h3 {
+    font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+}
 h4 {
     // from landing page
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
