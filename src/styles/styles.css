@@ -24,7 +24,7 @@ body {
 
 i {
   font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
-  color: rgb(157, 190, 213);
+  color: rgb(247, 247, 247);
 }
 
 h1 {
@@ -42,7 +42,7 @@ button {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 html {
@@ -268,12 +268,148 @@ html {
   overflow: hidden;
 }
 
-footer img.footerImg {
+* {
+  text-decoration: none;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul p {
+  font-size: 2.5rem;
+  color: #000;
+  margin: 20px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+footer {
+  margin-top: 80px;
+  padding-top: 120px;
+  background-image: url(../../../assets/cloudFooterNew.svg);
+  background-size: cover;
+  height: 65vh;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+footer div section {
+  width: 50%;
+  margin-top: 70px;
+}
+footer div section .crisisSupport {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+footer div section .crisisSupport p, footer div section .crisisSupport ul {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  margin-top: 5px;
+}
+footer div section .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin-top: 40px;
+}
+footer div section .buttons button {
   width: 100%;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(247, 247, 247);
+}
+footer div section .buttons button a {
+  color: #000;
+}
+footer div section .buttons button:hover {
+  background-color: rgb(247, 247, 247);
+  color: #C1CFD8;
+}
+footer div section .socialMedia {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid rgb(247, 247, 247);
+}
+footer div section .socialMedia .sx-verified-seal {
+  width: 20%;
+}
+footer div section .socialMedia img {
+  border-radius: 20px;
+  width: 100%;
+  padding: 7px;
+}
+footer div section .socialMedia i {
+  margin-left: 10px;
+}
+footer div form {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(50% - 80px);
+  margin-right: 80px;
+}
+footer div form h4 {
+  width: 100%;
+  font-size: 3rem;
+  font-family: "Nunito";
+  margin-bottom: 0px;
+  color: #000;
+  letter-spacing: 0.9px;
+}
+footer div form input {
+  width: calc(50% - 10px);
+  padding: 0px 10px;
+  margin: 0px 10px 10px 0;
+  border-radius: 10px;
+  font-size: 1.35rem;
+  font-family: "Nunito";
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.461);
+  color: #000;
+}
+footer div form textarea {
+  width: calc(100% - 10px);
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.35rem;
+  font-family: "Nunito";
+  background-color: rgba(255, 255, 255, 0.461);
+  color: #000;
+}
+footer div form button {
+  border: 3px solid rgb(247, 247, 247);
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 0px 10px;
+  font-size: 1.35rem;
+  font-family: "Nunito";
+  background-color: rgb(247, 247, 247);
+  color: #000;
+  font-weight: 700;
+}
+footer div form button:hover {
+  background-color: rgb(247, 247, 247);
+  color: #C1CFD8;
+  border: 3px solid rgb(247, 247, 247);
 }
 
 .book {
-  background-color: white;
+  background-color: #FFF;
   padding: 20px;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -318,7 +454,7 @@ footer img.footerImg {
   text-align: left;
 }
 .book p span {
-  color: rgb(74, 129, 144);
+  color: #C1CFD8;
 }
 .book .sectionItems {
   height: 60vh;
@@ -437,13 +573,13 @@ header h1 {
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: white;
+  background-color: #FFF;
   border-radius: 20px;
   padding: 0px 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   min-height: 50vh;
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 .services .service div {
   height: 30vh;
@@ -454,6 +590,7 @@ header h1 {
 }
 .services .service div i {
   font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);
+  color: #C1CFD8;
 }
 .services .service div h3, .services .service div p {
   margin: 0;
@@ -485,7 +622,7 @@ header h1 {
 .about .approach,
 .about .qualifications {
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  background-color: rgb(250, 250, 250);
+  background-color: #FFF;
   padding: 0px 30px;
   display: flex;
   justify-content: space-between;
@@ -496,6 +633,7 @@ header h1 {
 .about .approach i,
 .about .qualifications i {
   font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+  color: #C1CFD8;
 }
 .about .bio {
   width: 40%;
@@ -560,4 +698,56 @@ header h1 {
 .faq .faqList .faqItem .question p,
 .faq .faqList .faqItem .question i {
   font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
+}
+.faq .faqList .faqItem .question i {
+  color: #C1CFD8;
+}
+
+.policy .headerImg {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
+  background-image: url("../../../assets/headerImageClouds.jpg");
+}
+.policy .subHeading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: clamp(1.2rem, 1.5vw, 2rem);
+  color: #000;
+}
+.policy .container {
+  margin: 30px auto;
+  width: 70%;
+  max-width: 1200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px 40px;
+}
+.policy h3 {
+  color: #C1CFD8;
+  font-size: clamp(1.5rem, 2.3vw, 2.5rem);
+}
+.policy p {
+  line-height: clamp(1.8rem, 2.3vw, 2.5rem);
+}
+.policy ol, .policy ul {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  line-height: clamp(1.8rem, 2.3vw, 2.5rem);
+}
+.policy .bold {
+  font-weight: 700;
+}
+.policy .underline {
+  text-decoration: underline;
+}
+.policy .underline li {
+  text-decoration: none;
+}
+.policy .address {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
 }/*# sourceMappingURL=styles.css.map */
