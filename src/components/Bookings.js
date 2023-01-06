@@ -3,11 +3,11 @@
 
 const Bookings = () => {
   return (
-    <section className="book  wrapper">
+    <section className="book container wrapper">
       <div className="sectionContent">
       <div className="getInTouch">
      <h3>Ready to get started? Send us an email with any questions or schedule your first session below. </h3>
-     <button> <a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a>  </button>
+     <button> <a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a></button>
       </div>
 
       <div className="formContainer">

@@ -1,51 +1,4 @@
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-.wrapper {
-  max-width: 1400px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-h3 {
-  font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
-}
-
-p, a {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(247, 247, 247);
-}
-
-i {
-  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
-  color: rgb(247, 247, 247);
-}
-
-h1 {
-  font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
-}
-
-button {
-  border: none;
-  padding: 15px;
-  background: rgb(247, 247, 247);
-  cursor: pointer;
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-  transition: all 0.3s ease;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -268,208 +221,296 @@ html {
   overflow: hidden;
 }
 
-* {
-  text-decoration: none;
-}
-
-nav ul {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-nav ul p {
-  font-size: 2.5rem;
+html {
+  font-family: "Montserrat";
+  /* 20px default font size @ 125% */
+  font-size: 62.5%;
   color: #000;
-  margin: 20px;
-  font-weight: 600;
-  font-family: "Montserrat";
 }
 
-footer {
-  margin-top: 80px;
-  padding-top: 120px;
-  background-image: url(../../../assets/cloudFooterNew.svg);
-  background-size: cover;
-  height: 65vh;
-}
-footer div {
-  display: flex;
-  justify-content: space-between;
-}
-footer div section {
-  width: 50%;
-  margin-top: 70px;
-}
-footer div section .crisisSupport {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin-top: 40px;
-  margin-right: 20px;
-}
-footer div section .crisisSupport p, footer div section .crisisSupport ul {
-  font-size: 1rem;
-  font-family: "Montserrat";
+h1 {
+  font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
+  text-align: left;
   font-weight: 500;
-  margin-top: 5px;
 }
-footer div section .buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 30%;
-  margin-top: 40px;
+
+h2 {
+  font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
+  text-align: center;
+  text-transform: uppercase;
 }
-footer div section .buttons button {
-  width: 100%;
+
+h3 {
+  font-size: clamp(1.25rem, 0.9028rem + 1.1111vw, 1.875rem);
+}
+
+h4 {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  line-height: clamp(1.8rem, 2.3vw, 2.5rem);
+}
+
+ol, ul {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  line-height: clamp(1.8rem, 2.3vw, 2.5rem);
+}
+
+li {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
+
+footer p, footer li {
+  font-size: 1rem;
+}
+
+a {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  color: #000;
+}
+
+nav a {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+i {
+  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
+  color: rgb(141, 176, 221);
+}
+
+span {
+  color: rgb(141, 176, 221);
+}
+
+button {
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
+
+input, textarea {
+  font-size: 1.35rem;
+  font-family: "Nunito";
+}
+
+.centered {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(247, 247, 247);
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  width: 70%;
+}
+
+h3 {
+  margin: 5px 0px;
+}
+
+button {
+  width: 15%;
   border-radius: 50px;
   padding: 10px;
   margin: 5px;
   background-color: rgb(247, 247, 247);
+  border: none;
+  box-shadow: 0px 5px 10px rgba(61, 61, 61, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-footer div section .buttons button a {
-  color: #000;
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  transform: translateY(-7px);
+  color: rgb(141, 176, 221);
 }
-footer div section .buttons button:hover {
-  background-color: rgb(247, 247, 247);
-  color: #C1CFD8;
-}
-footer div section .socialMedia {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 2px solid rgb(247, 247, 247);
-}
-footer div section .socialMedia .sx-verified-seal {
-  width: 20%;
-}
-footer div section .socialMedia img {
+
+.container {
+  background-color: #FFF;
   border-radius: 20px;
-  width: 100%;
-  padding: 7px;
+  padding: 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-footer div section .socialMedia i {
-  margin-left: 10px;
+.container:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
 }
-footer div form {
+
+nav ul {
   display: flex;
-  flex-wrap: wrap;
-  width: calc(50% - 80px);
-  margin-right: 80px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
 }
-footer div form h4 {
-  width: 100%;
-  font-size: 3rem;
-  font-family: "Nunito";
-  margin-bottom: 0px;
-  color: #000;
-  letter-spacing: 0.9px;
+nav ul li {
+  margin: 20px;
 }
-footer div form input {
-  width: calc(50% - 10px);
-  padding: 0px 10px;
-  margin: 0px 10px 10px 0;
-  border-radius: 10px;
-  font-size: 1.35rem;
-  font-family: "Nunito";
-  border: none;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.461);
-  color: #000;
+
+header {
+  background-image: url("../../../assets/headerImageClouds.jpg");
+  background-position-y: 20%;
 }
-footer div form textarea {
-  width: calc(100% - 10px);
-  border-radius: 10px;
-  padding: 10px;
-  border: none;
-  outline: none;
-  font-size: 1.35rem;
-  font-family: "Nunito";
-  background-color: rgba(255, 255, 255, 0.461);
-  color: #000;
+header .vidContainer {
+  height: 90vh;
 }
-footer div form button {
-  border: 3px solid rgb(247, 247, 247);
-  margin-top: 15px;
-  border-radius: 15px;
-  padding: 0px 10px;
-  font-size: 1.35rem;
-  font-family: "Nunito";
-  background-color: rgb(247, 247, 247);
-  color: #000;
-  font-weight: 700;
+header .headerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  flex-wrap: nowrap;
+  height: 80vh;
 }
-footer div form button:hover {
-  background-color: rgb(247, 247, 247);
-  color: #C1CFD8;
-  border: 3px solid rgb(247, 247, 247);
+
+.headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 25vh;
+}
+.headline p {
+  width: 80%;
+}
+
+.offering {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: normal;
+  flex-wrap: nowrap;
+  min-height: 90vh;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 50vh;
+}
+.services .service {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 25%;
+  min-height: 50vh;
+}
+.services .service div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 30vh;
+}
+.services .service button {
+  width: 50%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 50px 0px;
+  min-height: 80vh;
+  background-color: rgb(242, 242, 243);
+}
+.about .approach,
+.about .qualifications {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.about .bio {
+  width: 40%;
+}
+.about .bio .headshot {
+  position: fixed;
 }
 
 .book {
-  background-color: #FFF;
-  padding: 20px;
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
-}
-.book button:hover {
-  transform: translateY(-7px);
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: nowrap;
 }
 .book .sectionContent {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
+  flex-wrap: nowrap;
   padding: 100px 0 20px 0px;
 }
 .book .getInTouch {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  justify-content: normal;
   align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 40%;
 }
 .book .getInTouch button {
   width: 40%;
-  border-radius: 20px;
-  padding: 20px 0px;
-  background-color: #C1CFD8;
-  font-size: 2rem;
-}
-.book .getInTouch h3 {
-  font-size: clamp(3rem, 3vw, 4rem);
-  text-align: left;
 }
 .book h3 {
   width: 100%;
-  text-align: center;
-  font-size: clamp(3rem, 3vw, 4rem);
 }
 .book p {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  text-align: center;
   width: 90%;
-  text-align: left;
-}
-.book p span {
-  color: #C1CFD8;
 }
 .book .sectionItems {
-  height: 60vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 60vh;
+  align-content: center;
   gap: 20px;
   width: 50%;
 }
 .book form button {
   width: 40%;
   align-content: center;
-  font-size: 2rem;
 }
 .book form label {
   height: 100%;
@@ -495,259 +536,217 @@ footer div form button:hover {
 .formContainer {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: nowrap;
   width: 30%;
-}
-.formContainer h4 {
-  font-size: 3rem;
-  margin: 0;
 }
 
 .billingPolicies {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header {
-  background-image: url("../../../assets/headerImageClouds.jpg");
-  background-position-y: 20%;
-}
-header .vidContainer {
-  height: 90vh;
-}
-header .headerContent {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
-  align-items: left;
-  height: 80vh;
-}
-header .headerContent button {
-  width: 15%;
-  font-size: clamp(1.25rem, 0.8333rem + 1.3333vw, 2rem);
-  box-shadow: 0px 5px 10px rgba(61, 61, 61, 0.1);
-  transition: all 0.4s ease;
-}
-header .headerContent button:hover {
-  transform: translateY(-7px);
-}
-header h1 {
-  font-size: clamp(3.125rem, 0.4167rem + 8.6667vw, 8rem);
-  width: 70%;
-  text-align: left;
-}
-
-.headline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25vh;
-}
-.headline p {
-  width: 80%;
-  font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
-}
-
-.offering {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.offering h2 {
-  font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
-  text-align: center;
-}
-
-.services {
-  display: flex;
-  min-height: 50vh;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.services .service {
-  width: 25%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  background-color: #FFF;
-  border-radius: 20px;
-  padding: 0px 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  min-height: 50vh;
-  text-decoration: none;
-  color: #000;
-}
-.services .service div {
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.services .service div i {
-  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);
-  color: #C1CFD8;
-}
-.services .service div h3, .services .service div p {
-  margin: 0;
-  padding: 0;
-}
-.services .service:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
-}
-.services .service button {
-  width: 50%;
-  border: none;
-  padding: 15px;
-}
-.services .service button:hover {
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-}
-
-.about {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 50px 0px;
-  min-height: 80vh;
-  background-color: rgb(238, 238, 238);
-}
-.about h3 {
-  margin: 5px 0px;
-}
-.about .approach,
-.about .qualifications {
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  background-color: #FFF;
-  padding: 0px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-.about .approach i,
-.about .qualifications i {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
-  color: #C1CFD8;
-}
-.about .bio {
-  width: 40%;
-}
-.about .bio li {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-}
-.about .bio .headshot {
-  position: fixed;
-}
-.about .bio h2 {
-  text-transform: uppercase;
-}
-.about .bio h3 {
-  font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
-}
-.about .bio h4 {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-  text-transform: uppercase;
-  font-weight: 400;
 }
 
 .faq h2 {
   height: 50vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
+  flex-wrap: nowrap;
   background-image: url("../../../assets/headerImageClouds.jpg");
 }
 .faq .faqList {
-  list-style-type: none;
-  width: 80%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   justify-content: space-between;
+  align-items: normal;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin: 0 auto;
 }
-.faq .faqList .faqItem {
+.faq .faqItem {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: nowrap;
   margin-bottom: 15px;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(242, 242, 243);
   padding: 15px 50px;
   box-shadow: rgba(33, 35, 38, 0.15) 0px 10px 10px -10px;
 }
-.faq .faqList .faqItem:hover {
+.faq .faqItem:hover {
   cursor: pointer;
 }
-.faq .faqList .faqItem .answer {
+.faq .answer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
 }
-.faq .faqList .faqItem .answer p {
+.faq .answer p {
   width: 94%;
 }
-.faq .faqList .faqItem .question {
+.faq .question {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
-.faq .faqList .faqItem .question p,
-.faq .faqList .faqItem .question i {
+.faq .question p, .faq .question i {
   font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
 }
-.faq .faqList .faqItem .question i {
-  color: #C1CFD8;
+.faq .question i {
+  color: rgb(141, 176, 221);
 }
 
 .policy .headerImg {
-  height: 50vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
+  flex-wrap: nowrap;
+  height: 50vh;
   background-image: url("../../../assets/headerImageClouds.jpg");
 }
-.policy .subHeading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  font-size: clamp(1.2rem, 1.5vw, 2rem);
-  color: #000;
-}
-.policy .container {
+.policy .page {
   margin: 30px auto;
   width: 70%;
   max-width: 1200px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 20px 40px;
 }
 .policy h3 {
-  color: #C1CFD8;
-  font-size: clamp(1.5rem, 2.3vw, 2.5rem);
-}
-.policy p {
-  line-height: clamp(1.8rem, 2.3vw, 2.5rem);
-}
-.policy ol, .policy ul {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-  line-height: clamp(1.8rem, 2.3vw, 2.5rem);
-}
-.policy .bold {
-  font-weight: 700;
-}
-.policy .underline {
-  text-decoration: underline;
-}
-.policy .underline li {
-  text-decoration: none;
+  color: rgb(141, 176, 221);
 }
 .policy .address {
-  list-style: none;
   text-align: center;
   padding: 0px;
+}
+
+footer {
+  margin-top: 80px;
+  padding-top: 120px;
+  background-image: url(../../../assets/cloudFooterNew.svg);
+  background-size: cover;
+  height: 65vh;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+footer div section {
+  width: 50%;
+  margin-top: 70px;
+}
+footer div section .crisisSupport {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: nowrap;
+  width: 70%;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+footer div section .crisisSupport p, footer div section .crisisSupport ul {
+  margin-top: 5px;
+}
+footer div section .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
+  width: 30%;
+  margin-top: 40px;
+}
+footer div section .buttons button {
+  width: 100%;
+}
+footer div section .socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid rgb(247, 247, 247);
+}
+footer div section .socialMedia .sx-verified-seal {
+  width: 20%;
+}
+footer div section .socialMedia img {
+  border-radius: 20px;
+  width: 100%;
+  padding: 7px;
+}
+footer div section .socialMedia i {
+  margin-left: 10px;
+}
+footer div form {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: wrap;
+  width: calc(50% - 80px);
+  margin-right: 80px;
+}
+footer div form h4 {
+  width: 100%;
+  margin-bottom: 0px;
+}
+footer div form input, footer div form textarea {
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+  padding: 0px 10px;
+}
+footer div form input {
+  width: calc(50% - 10px);
+  margin: 0px 10px 10px 0;
+  border-radius: 10px;
+  font-size: 1.35rem;
+  font-family: "Nunito";
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.461);
+  color: #000;
+}
+footer div form textarea {
+  width: calc(100% - 10px);
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.35rem;
+  font-family: "Nunito";
+  background-color: rgba(255, 255, 255, 0.461);
+  color: #000;
+}
+footer div form button {
+  border: 3px solid rgb(247, 247, 247);
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 0px 10px;
+  font-size: 1.35rem;
+  font-family: "Nunito";
+  background-color: rgb(247, 247, 247);
+  color: #000;
+  font-weight: 700;
+}
+footer div form button:hover {
+  background-color: rgb(247, 247, 247);
+  color: rgb(141, 176, 221);
+  border: 3px solid rgb(247, 247, 247);
 }/*# sourceMappingURL=styles.css.map */

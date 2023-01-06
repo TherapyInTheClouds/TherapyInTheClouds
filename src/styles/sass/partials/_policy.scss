@@ -3,62 +3,20 @@
 
 .policy {
     .headerImg {
+        @include flex(row, center, center);
         height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: clamp(1.875rem, 0.1389rem + 5.5556vw, 5rem);
         background-image: url("../../../assets/headerImageClouds.jpg");
     }
-    .heading {
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -200%);
-        // font-size: clamp(4rem, 5vw, 6rem);
-        // // text-shadow: 0px 2px 6px #343333;
-    }
-    .subHeading {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        font-size: clamp(1.2rem, 1.5vw, 2rem);
-        color: $fontColour;
-    }
-    .container {
+    .page {
         margin: 30px auto;
         width: 70%;
         max-width: 1200px;
-        box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
         padding: 20px 40px;
     }
-
     h3 {
         color: $primaryColour;
-        font-size: clamp(1.5rem, 2.3vw, 2.5rem);
-        //text-shadow: 0.2px 0.5px 0.2px #343333;
-    }
-
-    p {
-        line-height: clamp(1.8rem, 2.3vw, 2.5rem);
-    }
-
-    ol, ul {
-        font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-        line-height: clamp(1.8rem, 2.3vw, 2.5rem);
-    }
-    .bold {
-        font-weight: 700;
-    }
-    .underline {
-        text-decoration: underline;
-        li {
-            text-decoration: none;
-        }
     }
     .address {
-        list-style: none;
         text-align: center;
         padding: 0px;
     }

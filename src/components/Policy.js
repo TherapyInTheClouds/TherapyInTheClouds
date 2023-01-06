@@ -4,10 +4,9 @@ const Policy = () => {
     return (
         <section className="policy">
             <div className="headerImg">
-                <h2 className="heading">Privacy Policy</h2>
-                <p className="subHeading">Last modified December 08, 2022</p>
+                <h2>Privacy Policy</h2>
             </div>
-            <div className="container">
+            <div className="page container">
                 <p>
                     Therapy in the Clouds upholds the privacy of our clients and acknowledges the need for
                     transparency in the ways in which we do so. Thus, Therapy in the Clouds has created this
