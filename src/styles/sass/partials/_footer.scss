@@ -27,17 +27,6 @@ footer {
                 margin-top: 40px;
                 button {
                     width: 100%;
-                    border-radius: 50px;
-                    padding: 10px;
-                    margin: 5px;
-                    background-color: $secondaryColour;
-                    a {
-                        color: $fontColour;
-                    }
-                    &:hover {
-                        background-color: $secondaryColour;
-                        color: $primaryColour;
-                    }
                 }
             }
             .socialMedia {
