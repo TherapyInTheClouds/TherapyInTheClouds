@@ -37,27 +37,35 @@ h3 {
     // font-size: clamp(1.5rem, 2.3vw, 2.5rem);
 }
 
-.bio h3 {
-    font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+.bio h4 {
+   
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
 }
+
+.bio h3 {
+     font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+}
+
 h4 {
-    // from landing page
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h5 {
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
     text-transform: uppercase;
-    font-weight: 400;
-    // from bookings page
-    // font-size: 3rem;
+    font-weight: 500;
 }
 
 p {
     // from global styles
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-    line-height: clamp(1.8rem, 2.3vw, 2.5rem);
-    // From landing page
-    //font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
-    // from bookings page
-    // font-size: clamp(1rem, 2vw, 1.2rem);
-    // text-align: left;
+    line-height: clamp(1.8rem, 2.3vw, 2.2rem);
+}
+
+.headline p {
+    font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
 }
 
 ol, ul {
@@ -86,13 +94,17 @@ nav a {
 }
 
 i {
-    // from global styles
     font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
-    // from landing page
-    // font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);
-    // from landing page about section
-    // font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
     color: $primaryColour;
+}  
+
+.service i {
+    font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);
+}
+
+
+.approach i, .qualifications i {
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.5rem);
 }
 
 span {

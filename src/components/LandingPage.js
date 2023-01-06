@@ -59,8 +59,8 @@ const LandingPage = () => {
             others. However, the journey of therapy truly begins with the
             exploration of the relationship we have with ourselves.
           </p>
-          <div className="approach container" onClick={showApproach}>
-            <h4>Therapeutic Approach</h4>
+          <div className="approach" onClick={showApproach}>
+            <h5>Therapeutic Approach</h5>
             <i class="fa-solid fa-plus"></i>
           </div>
           {showMoreApproach ? (
@@ -79,8 +79,8 @@ const LandingPage = () => {
             </>
           ) : null}
 
-          <div className="qualifications container" onClick={showQualIntro}>
-            <h4>Qualifications</h4>
+          <div className="qualifications" onClick={showQualIntro}>
+            <h5>Qualifications</h5>
             <i className="fa-solid fa-plus"></i>
           </div>
 

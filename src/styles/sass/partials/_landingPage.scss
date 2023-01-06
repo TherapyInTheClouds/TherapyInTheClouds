@@ -11,8 +11,35 @@ header {
   .headerContent {
     @include flex(column, center, left);
     height: 80vh;
+
+    button {
+        background-color: $quarternaryColour;
+      
+           
+            color: #fff;
+        
+            &:after {
+              content: '';
+             
+              background-color: $quarternaryColour;
+             
+            }
+            &:before {
+              content: '';
+           
+              background-color: darken($quarternaryColour, 15%);
+           
+            }
+            &:hover {
+              color: #fff;
+              &:before {
+              
+              }
+            }
+          }
+    }
   }
-}
+
 
 // landing page banner
 
@@ -64,15 +91,19 @@ header {
   .approach,
   .qualifications {
     @include flex(row, space-between, center);
-    // box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-    // background-color: $whiteColour;
-    // padding: 0px 30px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    background-color: $whiteColour;
+    padding: 20px 30px;
     margin-bottom: 10px;
     cursor: pointer;
   }
 
   .bio {
     width: 40%;
+
+    p {
+        margin: 15px 0;
+    }
 
     .headshot {
       position: fixed;
