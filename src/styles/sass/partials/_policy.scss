@@ -4,7 +4,7 @@
 .policy {
     .headerImg {
         @include flex(row, center, center);
-        height: 50vh;
+        height: 35vh;
         background-image: url("../../../assets/headerImageClouds.jpg");
     }
     .page {

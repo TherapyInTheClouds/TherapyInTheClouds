@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
-import clouds from "../assets/clouds.mp4";
+import headshot from "../assets/headshot.jpg";
 
-const LandingPage = () => {
+const LandingPage = (props) => {
   const [showMoreQual, setShowMoreQual] = useState(false);
   const [showMoreApproach, setShowMoreApproach] = useState(false);
 
@@ -11,16 +11,11 @@ const LandingPage = () => {
   const aboutRef = useRef();
   const scrollInto = () => aboutRef.current?.scrollIntoView({ behavior: "smooth" });
 
+  
+
   return (
     <>
       <header>
-        {/* <div className="vidContainer" width="100%">
-          <video className="clouds" height="100%" widht="100%" object-fit="cover" className="videoTag" autoPlay loop muted>
-          <source className="clouds" src={clouds} type="video/mp4" />
-        </video>
-        </div> */}
-       
-
         <div className="headerContent wrapper">
           <h1>Your path to wellness starts here.</h1>
           <button onClick={scrollInto}>Learn More</button>
@@ -44,7 +39,7 @@ const LandingPage = () => {
           <p>Registered Social Worker, Therapist and Practice Founder</p>
 
           <p>
-            I started Therapy in the Clouds because my goal is to shake up how
+            I started Therapy in the Clouds with the goal of shaking up how
             we view therapy, and what it can truly be. As humans, we grow and flourish when we
             find ourselves in unfamiliar spaces. I truly believe both the art
             and science of therapy provides a space to nourish this growth by
@@ -72,7 +67,7 @@ const LandingPage = () => {
               Cognitive Behavioural Therapy (CBT). I support you by
               working to challenge your negative thought patterns in order to
               deepen our understanding of your emotions and thereby shift your actions.
-              I am a firm believer that we often need to “feel to  heal,” and through understanding ourselves, we can create conscious spaces
+              I am a firm believer that we often need to “feel to heal,” and through understanding ourselves, we can create conscious spaces
               for healing and growth.
             </p>
             <p>Populations I support : Individuals, youth, adults, couples & families.</p>
@@ -85,7 +80,7 @@ const LandingPage = () => {
           </div>
 
           {showMoreQual ? (
-            <ul>
+            <ul className="qualsList">
               <li>
                 Registered Social Worker, Ontario College of Social Workers and
                 Social Service Workers
@@ -103,8 +98,8 @@ const LandingPage = () => {
         </div>
 
         <div className="headshot">
-          <img
-            src="http://placekitten.com/500/700"
+          <img 
+            src={headshot}
             alt="headshot of Therapy In The Clouds Practice Founder, Cassandra Fezzuoglio"
           />
         </div>
@@ -132,9 +127,9 @@ const LandingPage = () => {
               <i className="fa-solid fa-user"></i>
               <h3>Individual Counselling Session</h3>
               <p>
-                1-on-1 virtual sessions at 50 minutes in length. Cost of
-                session: $175.00
+                1-on-1 virtual sessions at 50 minutes in length.
               </p>
+              <p>Cost of session: $175.00</p>
               <button><a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a></button>
             </div>
           </div>
@@ -144,9 +139,9 @@ const LandingPage = () => {
               <i className="fa-solid fa-user-group"></i>
               <h3>Couples Counselling Session</h3>
               <p>
-                A virtual couples sessions at 50 minutes in length. Cost of
-                session: $185.00
+                A virtual couples sessions at 50 minutes in length.
               </p>
+              <p>Cost of session: $185.00</p>
               <button> <a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a></button>
             </div>
           </div>

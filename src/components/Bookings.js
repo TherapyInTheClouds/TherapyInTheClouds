@@ -3,11 +3,12 @@
 
 const Bookings = () => {
   return (
-    <section className="book container wrapper">
-      <div className="sectionContent">
+    <section className="book">
+      <h2>Booking</h2>
+      <div className="sectionContent wrapper">
       <div className="getInTouch">
-     <h3>Ready to get started? Send us an email with any questions or schedule your first session below. </h3>
-     <button> <a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">Book Now</a></button>
+     <h3>Ready to get started? Send us an email with any questions you may have. </h3>
+  
       </div>
 
       <div className="formContainer">
@@ -55,6 +56,10 @@ const Bookings = () => {
         
         
       </div>
+
+
+
+      
       </div>
      
       
@@ -65,7 +70,7 @@ const Bookings = () => {
         the start of the session.  Clients will be provided with a receipt for
         service, including the therapist’s name, designation, and registration
         number. Payment is accepted by e-transfer only to
-        <span> cassandra@therapyintheclouds.ca</span>
+        cassandra@therapyintheclouds.ca
       </p>
 
       <p>

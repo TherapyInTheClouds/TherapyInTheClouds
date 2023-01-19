@@ -2,10 +2,26 @@
 @use "./mixins" as *;
 
 nav {
-    ul {
-        @include flex(row, center);
-        li {
-            margin: 20px;
+    display: flex; 
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    background-color: #c4cdd6;
+    
+    .logo {
+            width: 8%;
+            padding-top: 10px;
         }
+    ul {
+        gap: 50px;
+        @include flex(row, center);
+        transition: all 1s;
+
+        a {
+            &:hover {
+            border-bottom: 4px solid $quarternaryColour;
+        }
+    }
+       
     }
 }

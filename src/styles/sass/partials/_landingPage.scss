@@ -13,33 +13,28 @@ header {
     height: 80vh;
 
     button {
+      background-color: $quarternaryColour;
+      width: 20%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+      color: #fff;
+
+      &:after {
+        content: "";
+
         background-color: $quarternaryColour;
-      
-           
-            color: #fff;
-        
-            &:after {
-              content: '';
-             
-              background-color: $quarternaryColour;
-             
-            }
-            &:before {
-              content: '';
-           
-              background-color: darken($quarternaryColour, 15%);
-           
-            }
-            &:hover {
-              color: #fff;
-              &:before {
-              
-              }
-            }
-          }
+      }
+      &:before {
+        content: "";
+
+        background-color: darken($quarternaryColour, 15%);
+      }
+      &:hover {
+        color: #fff;
+       
+      }
     }
   }
-
+}
 
 // landing page banner
 
@@ -67,14 +62,24 @@ header {
     @include flex(row, normal, center);
     width: 25%;
     min-height: 50vh;
+    animation: slideUp 2s;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    &:hover {
+      box-shadow: rgba(41, 41, 57, 0.25) 0px 6px 8px -2px;
+      transform: scale(1.04);
+    }
+    
+    
 
     div {
       @include flex(column, space-evenly, center);
       height: 30vh;
+      margin: 0 10px;
     }
 
     button {
       width: 50%;
+      color: black;
     }
   }
 }
@@ -91,23 +96,56 @@ header {
   .approach,
   .qualifications {
     @include flex(row, space-between, center);
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     background-color: $whiteColour;
     padding: 20px 30px;
     margin-bottom: 10px;
     cursor: pointer;
+    box-shadow: 2px 0px 12px rgb(0 0 0 / 8%);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    &:hover {
+      box-shadow: rgba(41, 41, 57, 0.25) 0px 6px 8px -2px;
+      transform: scale(1.01);
+    }
   }
 
+  .qualsList {
+     padding-left: 30px;
+      li {
+    list-style-type: circle;
+  }  
+}
+  
   .bio {
-    width: 40%;
+    width: 50%;
 
-    p {
-        margin: 15px 0;
+    h4 {
+      border-bottom: 2px solid $quarternaryColour;
+      width: 26%;
+      margin-bottom: 20px;
     }
+    p {
+      margin: 15px 0;
+    }
+  }
 
-    .headshot {
-      position: fixed;
+  .headshot {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 90%;
     }
   }
 }
 
+//keyframes for animations here
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="wrapper">
                 {/* <img className="footerImg" src={footer} alt="" /> */}
                 <form action="">
-                    <h4>Contact Us</h4>
+                    <h4>Get In Touch</h4>
                     <label htmlFor="name" className="sr-only">Your Name</label>
                     <input id="name" type="text" placeholder="Your Name" />
                     <label htmlFor="email" className="sr-only">Your Email</label>

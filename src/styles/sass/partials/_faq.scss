@@ -3,7 +3,7 @@
 
 .faq {
   h2 {
-    height: 50vh;
+    height: 35vh;
     @include flex(row, center, center);
     background-image: url("../../../assets/headerImageClouds.jpg");
   }

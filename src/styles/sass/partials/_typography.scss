@@ -38,12 +38,15 @@ h3 {
 }
 
 .bio h4 {
-   
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
 }
 
-.bio h3 {
+.bio h3{
      font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+}
+
+.getInTouch h3 {
+    font-size: clamp(1rem, -0.4844rem + 4.75vw, 4rem); 
 }
 
 h4 {
@@ -61,7 +64,11 @@ h5 {
 p {
     // from global styles
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
-    line-height: clamp(1.8rem, 2.3vw, 2.2rem);
+  
+}
+
+.about p {
+      line-height: clamp(1.8rem, 2.3vw, 2.2rem);
 }
 
 .headline p {
@@ -89,7 +96,7 @@ a {
 }
 
 nav a {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 

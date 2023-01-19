@@ -1,15 +1,25 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+
 .book {
-  @include flex(column);
-  // padding: 20px;
-  // border-radius: 25px;
-  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   
+  @include flex(column, center, center);
+  h2 {
+    height: 35vh;
+    width: 100%;
+    @include flex(row, center, center);
+    background-image: url("../../../assets/headerImageClouds.jpg");
+  }
+  // background-color: #c4cdd6;
+
   .sectionContent {
     @include flex(row, space-evenly, flex-start);
-    padding: 100px 0 20px 0px;
+    padding: 100px 0;
+    margin: 40px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: $secondaryColour;
   }
 
   .getInTouch {
@@ -17,14 +27,14 @@
     width: 40%;
 
     button {
-        width: 40%;
-        // border-radius: 20px;
-        // padding: 20px 0px;
-        // background-color: $primaryColour;
-        // font-size: 2rem;
+      width: 40%;
+      // border-radius: 20px;
+      // padding: 20px 0px;
+      // background-color: $primaryColour;
+      // font-size: 2rem;
     }
   }
-  
+
   h3 {
     width: 100%;
   }
@@ -32,7 +42,7 @@
   p {
     width: 90%;
   }
-  
+
   .sectionItems {
     @include flex(column, center, center);
     height: 60vh;
@@ -40,11 +50,11 @@
     gap: 20px;
     width: 50%;
   }
-   
+
   form {
     button {
       width: 40%;
-      align-content: center;
+      //align-content: center;
     }
 
     label {
@@ -66,16 +76,19 @@
     }
 
     .formItem {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       position: relative;
     }
   }
 }
 
-
 .formContainer {
   @include flex(column);
-  width: 30%;
+  width: 40%;
+
+  p {
+    margin: 15px 0;
+  }
 }
 
 .billingPolicies {

@@ -255,6 +255,10 @@ h3 {
   font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
 }
 
+.getInTouch h3 {
+  font-size: clamp(1rem, -0.4844rem + 4.75vw, 4rem);
+}
+
 h4 {
   text-transform: uppercase;
   font-weight: bold;
@@ -269,6 +273,9 @@ h5 {
 
 p {
   font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+}
+
+.about p {
   line-height: clamp(1.8rem, 2.3vw, 2.2rem);
 }
 
@@ -295,13 +302,13 @@ a {
 }
 
 nav a {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 i {
   font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
-  color: rgb(141, 176, 221);
+  color: #B2C6DF;
 }
 
 .service i {
@@ -313,7 +320,7 @@ i {
 }
 
 span {
-  color: rgb(141, 176, 221);
+  color: #B2C6DF;
 }
 
 button {
@@ -382,7 +389,7 @@ button:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(141, 176, 221);
+  background-color: #B2C6DF;
   border-radius: 25px;
   z-index: -2;
 }
@@ -393,7 +400,7 @@ button:before {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #5287cb;
+  background-color: #7c9ec9;
   transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
@@ -409,21 +416,36 @@ button:hover:before {
   background-color: #FFF;
   border-radius: 20px;
   padding: 0px 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 .container:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+  transform: scale(1.01);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+  background-color: #c4cdd6;
+}
+nav .logo {
+  width: 8%;
+  padding-top: 10px;
+}
 nav ul {
+  gap: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: normal;
   flex-wrap: nowrap;
+  transition: all 1s;
 }
-nav ul li {
-  margin: 20px;
+nav ul a:hover {
+  border-bottom: 4px solid #ddcda1;
 }
 
 header {
@@ -443,6 +465,8 @@ header .headerContent {
 }
 header .headerContent button {
   background-color: #ddcda1;
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   color: #fff;
 }
 header .headerContent button:after {
@@ -456,6 +480,7 @@ header .headerContent button:before {
 header .headerContent button:hover {
   color: #fff;
 }
+
 .headline {
   display: flex;
   flex-direction: row;
@@ -493,6 +518,13 @@ header .headerContent button:hover {
   flex-wrap: nowrap;
   width: 25%;
   min-height: 50vh;
+  -webkit-animation: slideUp 2s;
+          animation: slideUp 2s;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.services .service:hover {
+  box-shadow: rgba(41, 41, 57, 0.25) 0px 6px 8px -2px;
+  transform: scale(1.04);
 }
 .services .service div {
   display: flex;
@@ -501,9 +533,11 @@ header .headerContent button:hover {
   align-items: center;
   flex-wrap: nowrap;
   height: 30vh;
+  margin: 0 10px;
 }
 .services .service button {
   width: 50%;
+  color: black;
 }
 
 .about {
@@ -523,28 +557,81 @@ header .headerContent button:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   background-color: #FFF;
   padding: 20px 30px;
   margin-bottom: 10px;
   cursor: pointer;
+  box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.about .approach:hover,
+.about .qualifications:hover {
+  box-shadow: rgba(41, 41, 57, 0.25) 0px 6px 8px -2px;
+  transform: scale(1.01);
+}
+.about .qualsList {
+  padding-left: 30px;
+}
+.about .qualsList li {
+  list-style-type: circle;
 }
 .about .bio {
-  width: 40%;
+  width: 50%;
+}
+.about .bio h4 {
+  border-bottom: 2px solid #ddcda1;
+  width: 26%;
+  margin-bottom: 20px;
 }
 .about .bio p {
   margin: 15px 0;
 }
-.about .bio .headshot {
-  position: fixed;
+.about .headshot {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+.about .headshot img {
+  width: 90%;
 }
 
+@-webkit-keyframes slideUp {
+  0% {
+    transform: translate(0, 300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
 .book {
   display: flex;
   flex-direction: column;
-  justify-content: normal;
-  align-items: normal;
+  justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
+}
+.book h2 {
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-image: url("../../../assets/headerImageClouds.jpg");
 }
 .book .sectionContent {
   display: flex;
@@ -552,7 +639,11 @@ header .headerContent button:hover {
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: nowrap;
-  padding: 100px 0 20px 0px;
+  padding: 100px 0;
+  margin: 40px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(247, 247, 247);
 }
 .book .getInTouch {
   display: flex;
@@ -584,7 +675,6 @@ header .headerContent button:hover {
 }
 .book form button {
   width: 40%;
-  align-content: center;
 }
 .book form label {
   height: 100%;
@@ -603,7 +693,7 @@ header .headerContent button:hover {
   background: transparent;
 }
 .book form .formItem {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   position: relative;
 }
 
@@ -613,7 +703,10 @@ header .headerContent button:hover {
   justify-content: normal;
   align-items: normal;
   flex-wrap: nowrap;
-  width: 30%;
+  width: 40%;
+}
+.formContainer p {
+  margin: 15px 0;
 }
 
 .billingPolicies {
@@ -627,7 +720,7 @@ header .headerContent button:hover {
 }
 
 .faq h2 {
-  height: 50vh;
+  height: 35vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -679,7 +772,7 @@ header .headerContent button:hover {
   font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
 }
 .faq .question i {
-  color: rgb(141, 176, 221);
+  color: #B2C6DF;
 }
 
 .policy .headerImg {
@@ -688,7 +781,7 @@ header .headerContent button:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  height: 50vh;
+  height: 35vh;
   background-image: url("../../../assets/headerImageClouds.jpg");
 }
 .policy .page {
@@ -698,7 +791,7 @@ header .headerContent button:hover {
   padding: 20px 40px;
 }
 .policy h3 {
-  color: rgb(141, 176, 221);
+  color: #B2C6DF;
 }
 .policy .address {
   text-align: center;
@@ -708,7 +801,7 @@ header .headerContent button:hover {
 footer {
   margin-top: 80px;
   padding-top: 120px;
-  background-image: url(../../../assets/cloudFooterNew.svg);
+  background-color: #bfccd9;
   background-size: cover;
   height: 65vh;
 }
@@ -821,6 +914,6 @@ footer div form button {
 }
 footer div form button:hover {
   background-color: rgb(247, 247, 247);
-  color: rgb(141, 176, 221);
+  color: #B2C6DF;
   border: 3px solid rgb(247, 247, 247);
 }/*# sourceMappingURL=styles.css.map */
