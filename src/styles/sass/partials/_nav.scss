@@ -16,7 +16,9 @@ nav {
         gap: 50px;
         @include flex(row, center);
         transition: all 1s;
-
+        li {
+            width: max-content;
+        }
         a {
             &:hover {
             border-bottom: 4px solid $quarternaryColour;

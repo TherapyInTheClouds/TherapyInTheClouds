@@ -86,7 +86,8 @@ li {
 }
 
 footer p, footer li {
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+    line-height: clamp(1.35rem, 2vw, 1.75rem)
 }
 
 a {
@@ -104,6 +105,10 @@ i {
     font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
     color: $primaryColour;
 }  
+
+footer i {
+    font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4.125rem);
+}
 
 .service i {
     font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);

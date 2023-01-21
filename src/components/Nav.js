@@ -14,7 +14,7 @@ const Nav = (props) => {
          <Link to="/"><img className="logo" src={logo} alt="Therapy in the Clouds Logo" /></Link>
          <ul>
             <li><Link to="/">Home</Link></li>
-            <li>Booking</li>
+            <li><Link path={`/#servicesLink`}>Booking</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
             <li> <Link to="/policy">Privacy Policy</Link></li>
 

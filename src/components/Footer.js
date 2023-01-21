@@ -35,21 +35,15 @@ const Footer = () => {
                         <div className="buttons">
                             <button><Link>Get in Touch</Link></button>
                             <button><Link to="/policy">Privacy Policy</Link></button>
+                            <div className="socialMedia">
+                                <a href="https://www.psychologytoday.com/profile/908641" class="sx-verified-seal">
+                                    <img src={badge} />
+                                </a>
+                                <a href="">
+                                    <i className="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div className="socialMedia">
-                        <a href="https://www.psychologytoday.com/profile/908641" class="sx-verified-seal">
-                            <img src={badge} />
-                        </a>
-                        <a href="">
-                            <i className="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="">
-                            <i className="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="">
-                            <i className="fa-brands fa-twitter"></i>
-                        </a>
                     </div>
                 </section>
             </div>

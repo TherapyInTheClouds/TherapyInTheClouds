@@ -2,56 +2,62 @@
 @use "./mixins" as *;
 
 footer {
-    margin-top: 80px;
-    padding-top: 120px;
+    margin-top: 50px;
+    padding-top: 50px;
     background-color:  #bfccd9;
     background-size: cover;
-    height: 65vh;
+    height: 56vh;
     div {
         @include flex(row, space-between);
         section {
             width: 50%;
-            margin-top: 70px;
+            margin-top: 35px;
             .crisisSupport {
                 @include flex(column);
-                width: 70%;
-                margin-top: 40px;
+                width: 60%;
                 margin-right: 20px;
-                p, ul {
-                    margin-top: 5px;
+                p {
+                    margin-top: 10px;
+                }
+                li {
+                    margin-top: 3px;
+                    list-style-type: disc;
+                    margin-left: 25px;
                 }
             }
             .buttons {
-                @include flex(column, center);
+                @include flex(column, flex-start);
                 width: 30%;
-                margin-top: 40px;
+                margin-top: 10px;
                 button {
                     width: 100%;
+                    &::after {
+                        background-color: darken($primaryColour, 5%);
+                    }
                 }
             }
             .socialMedia {
-                @include flex(row, flex-end, center);
-                margin-top: 10px;
-                padding-top: 10px;
-                border-top: 2px solid $secondaryColour;
+                @include flex(row, center, center);
+                margin-top: 50px;
+                padding-top: 20px;
+                border-top: 3px solid $secondaryColour;
                 .sx-verified-seal {
-                    width: 20%;
+                    width: 100%;
                 }
                 img {
                     border-radius: 20px;
-                    width: 100%;
-                    padding: 7px;
+                    width: 95%;
                 }
                 i {
                     margin-left: 10px;
+                    color: darken($primaryColour, 15%);
                 }
             }
         }
     
         form {
-            @include flex(row, normal, normal, wrap);
-            width: calc(50% - 80px);
-            margin-right: 80px;
+            width: calc(50% - 50px);
+            margin-right: 50px;
             h4 {
                 width: 100%;
                 margin-bottom: 0px;
@@ -63,7 +69,8 @@ footer {
             }
             input {
                 width: calc(50% - 10px);
-                margin: 0px 10px 10px 0;
+                margin: 15px 10px 10px 0;
+                padding: 10px;
                 border-radius: 10px;
                 font-size: 1.35rem;
                 font-family: 'Nunito';
@@ -74,6 +81,7 @@ footer {
             }
             textarea {
                 width: calc(100% - 10px);
+                height: 150px;
                 padding: 10px;
                 border: none;
                 outline: none;
@@ -83,19 +91,15 @@ footer {
                 color: $fontColour;
             }
             button {
-                border: 3px solid $secondaryColour;
                 margin-top: 15px;
-                border-radius: 15px;
-                padding: 0px 10px;
-                font-size: 1.35rem;
-                font-family: 'Nunito';
-                background-color: $secondaryColour;
+                padding: 10px 15px;
+                font-family: $mainFont;
                 color: $fontColour;
-                font-weight: 700;
-                &:hover {
-                    background-color: $secondaryColour;
-                    color: $primaryColour;
-                    border: 3px solid $secondaryColour;
+                &::after {
+                    background-color: darken($primaryColour, 5%);
+                }
+                &:hover{
+                    color: $fontColour;
                 }
             }
         }
