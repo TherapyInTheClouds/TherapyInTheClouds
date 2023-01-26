@@ -12,13 +12,14 @@
     @include flex(column, space-between);
     width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
   }
 
   .faqItem {
     @include flex(column);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     background-color: $tertiaryColour;
-    padding: 15px 50px;  
+    padding: 25px 50px;  
     box-shadow: $listShadow;
     //box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.3px;
     //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -32,6 +33,7 @@
     @include flex(row, center);
     p {
       width: 94%;
+      margin-top: 10px;
     }
   }
 

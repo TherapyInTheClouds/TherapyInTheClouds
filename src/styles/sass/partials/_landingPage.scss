@@ -4,19 +4,22 @@
 header {
   background-image: url("../../../assets/headerImageClouds.jpg");
   background-position-y: 20%;
-  .vidContainer {
-    height: 90vh;
-  }
+  
 
   .headerContent {
     @include flex(column, center, left);
     height: 80vh;
 
+    @include tablet {
+      height: 100vh;
+    }
+
     button {
       background-color: $quarternaryColour;
-      width: 20%;
+      width: 15%;
       box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
       color: #fff;
+      min-width: 115px;
 
       &:after {
         content: "";
@@ -26,7 +29,7 @@ header {
       &:before {
         content: "";
 
-        background-color: darken($quarternaryColour, 15%);
+        background-color: darken($quarternaryColour, 7%);
       }
       &:hover {
         color: #fff;
@@ -41,6 +44,10 @@ header {
 .headline {
   @include flex(row, center, center);
   height: 25vh;
+
+  @include tablet {
+    height: 50vh;
+  }
 
   p {
     width: 80%;
@@ -58,6 +65,10 @@ header {
   @include flex(row, space-evenly, center);
   min-height: 50vh;
 
+  @include tablet {
+    @include flex(column, space-evenly, center)
+  }
+
   .service {
     @include flex(row, normal, center);
     width: 25%;
@@ -69,6 +80,10 @@ header {
       transform: scale(1.04);
     }
     
+    @include tablet {
+      width: 80%;
+     
+    }
     
 
     div {

@@ -293,7 +293,8 @@ li {
 }
 
 footer p, footer li {
-  font-size: 1rem;
+  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.25rem);
+  line-height: clamp(1.35rem, 2vw, 1.75rem);
 }
 
 a {
@@ -309,6 +310,10 @@ nav a {
 i {
   font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 3.125rem);
   color: #B2C6DF;
+}
+
+footer i {
+  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4.125rem);
 }
 
 .service i {
@@ -371,6 +376,7 @@ h3 {
 }
 
 button {
+  min-width: 115px;
   padding: 10px;
   margin: 5px;
   border-radius: 25px;
@@ -400,7 +406,7 @@ button:before {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #7c9ec9;
+  background-color: #8eabd0;
   transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
@@ -444,16 +450,18 @@ nav ul {
   flex-wrap: nowrap;
   transition: all 1s;
 }
+nav ul li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
 nav ul a:hover {
-  border-bottom: 4px solid #ddcda1;
+  border-bottom: 4px solid #d8c48c;
 }
 
 header {
   background-image: url("../../../assets/headerImageClouds.jpg");
   background-position-y: 20%;
-}
-header .vidContainer {
-  height: 90vh;
 }
 header .headerContent {
   display: flex;
@@ -463,19 +471,25 @@ header .headerContent {
   flex-wrap: nowrap;
   height: 80vh;
 }
+@media (max-width: 800px) {
+  header .headerContent {
+    height: 100vh;
+  }
+}
 header .headerContent button {
-  background-color: #ddcda1;
-  width: 20%;
+  background-color: #d8c48c;
+  width: 15%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   color: #fff;
+  min-width: 115px;
 }
 header .headerContent button:after {
   content: "";
-  background-color: #ddcda1;
+  background-color: #d8c48c;
 }
 header .headerContent button:before {
   content: "";
-  background-color: #c9af69;
+  background-color: #cfb671;
 }
 header .headerContent button:hover {
   color: #fff;
@@ -488,6 +502,11 @@ header .headerContent button:hover {
   align-items: center;
   flex-wrap: nowrap;
   height: 25vh;
+}
+@media (max-width: 800px) {
+  .headline {
+    height: 50vh;
+  }
 }
 .headline p {
   width: 80%;
@@ -510,6 +529,15 @@ header .headerContent button:hover {
   flex-wrap: nowrap;
   min-height: 50vh;
 }
+@media (max-width: 800px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .services .service {
   display: flex;
   flex-direction: row;
@@ -525,6 +553,11 @@ header .headerContent button:hover {
 .services .service:hover {
   box-shadow: rgba(41, 41, 57, 0.25) 0px 6px 8px -2px;
   transform: scale(1.04);
+}
+@media (max-width: 800px) {
+  .services .service {
+    width: 80%;
+  }
 }
 .services .service div {
   display: flex;
@@ -579,7 +612,7 @@ header .headerContent button:hover {
   width: 50%;
 }
 .about .bio h4 {
-  border-bottom: 2px solid #ddcda1;
+  border-bottom: 2px solid #d8c48c;
   width: 26%;
   margin-bottom: 20px;
 }
@@ -736,6 +769,7 @@ header .headerContent button:hover {
   flex-wrap: nowrap;
   width: 80%;
   margin: 0 auto;
+  margin-top: 20px;
 }
 .faq .faqItem {
   display: flex;
@@ -743,9 +777,9 @@ header .headerContent button:hover {
   justify-content: normal;
   align-items: normal;
   flex-wrap: nowrap;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   background-color: rgb(242, 242, 243);
-  padding: 15px 50px;
+  padding: 25px 50px;
   box-shadow: rgba(33, 35, 38, 0.15) 0px 10px 10px -10px;
 }
 .faq .faqItem:hover {
@@ -760,6 +794,7 @@ header .headerContent button:hover {
 }
 .faq .answer p {
   width: 94%;
+  margin-top: 10px;
 }
 .faq .question {
   display: flex;
@@ -799,11 +834,15 @@ header .headerContent button:hover {
 }
 
 footer {
-  margin-top: 80px;
-  padding-top: 120px;
+  margin-top: 50px;
   background-color: #bfccd9;
   background-size: cover;
-  height: 65vh;
+}
+footer .footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56vh;
 }
 footer div {
   display: flex;
@@ -814,7 +853,7 @@ footer div {
 }
 footer div section {
   width: 50%;
-  margin-top: 70px;
+  margin-top: 35px;
 }
 footer div section .crisisSupport {
   display: flex;
@@ -822,54 +861,56 @@ footer div section .crisisSupport {
   justify-content: normal;
   align-items: normal;
   flex-wrap: nowrap;
-  width: 70%;
-  margin-top: 40px;
+  width: 60%;
   margin-right: 20px;
 }
-footer div section .crisisSupport p, footer div section .crisisSupport ul {
-  margin-top: 5px;
+footer div section .crisisSupport p {
+  margin-top: 10px;
+}
+footer div section .crisisSupport li {
+  margin-top: 3px;
+  list-style-type: disc;
+  margin-left: 25px;
 }
 footer div section .buttons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: normal;
   flex-wrap: nowrap;
   width: 30%;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 footer div section .buttons button {
   width: 100%;
 }
+footer div section .buttons button::after {
+  background-color: #a0b9d8;
+}
 footer div section .socialMedia {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 2px solid rgb(247, 247, 247);
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 3px solid rgb(247, 247, 247);
 }
 footer div section .socialMedia .sx-verified-seal {
-  width: 20%;
+  width: 100%;
 }
 footer div section .socialMedia img {
   border-radius: 20px;
-  width: 100%;
-  padding: 7px;
+  width: 95%;
 }
 footer div section .socialMedia i {
   margin-left: 10px;
+  color: #7c9ec9;
 }
 footer div form {
-  display: flex;
-  flex-direction: row;
-  justify-content: normal;
-  align-items: normal;
-  flex-wrap: wrap;
-  width: calc(50% - 80px);
-  margin-right: 80px;
+  width: calc(50% - 50px);
+  margin-right: 50px;
 }
 footer div form h4 {
   width: 100%;
@@ -882,7 +923,8 @@ footer div form input, footer div form textarea {
 }
 footer div form input {
   width: calc(50% - 10px);
-  margin: 0px 10px 10px 0;
+  margin: 15px 10px 10px 0;
+  padding: 10px;
   border-radius: 10px;
   font-size: 1.35rem;
   font-family: "Nunito";
@@ -893,6 +935,7 @@ footer div form input {
 }
 footer div form textarea {
   width: calc(100% - 10px);
+  height: 150px;
   padding: 10px;
   border: none;
   outline: none;
@@ -902,18 +945,14 @@ footer div form textarea {
   color: #000;
 }
 footer div form button {
-  border: 3px solid rgb(247, 247, 247);
   margin-top: 15px;
-  border-radius: 15px;
-  padding: 0px 10px;
-  font-size: 1.35rem;
-  font-family: "Nunito";
-  background-color: rgb(247, 247, 247);
+  padding: 10px 15px;
+  font-family: "Montserrat", sans-serif;
   color: #000;
-  font-weight: 700;
+}
+footer div form button::after {
+  background-color: #a0b9d8;
 }
 footer div form button:hover {
-  background-color: rgb(247, 247, 247);
-  color: #B2C6DF;
-  border: 3px solid rgb(247, 247, 247);
+  color: #000;
 }/*# sourceMappingURL=styles.css.map */

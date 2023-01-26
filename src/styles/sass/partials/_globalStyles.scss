@@ -48,6 +48,7 @@ h3 {
 
 
   button {
+    min-width: 115px;
     padding: 10px;
     margin: 5px;
     border-radius: 25px;
@@ -76,7 +77,7 @@ h3 {
       left: 0;
       width: 0%;
       height: 100%;
-      background-color: darken($primaryColour, 15%);
+      background-color: darken($primaryColour, 10%);
       transition: all .3s;
       border-radius: 10rem;
       z-index: -1;

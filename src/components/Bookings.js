@@ -13,7 +13,7 @@ const Bookings = () => {
 
       <div className="formContainer">
       <h4>Get in touch</h4>
-      <p>Getting starting with therapy is rarely easy. We're happy to answer any questions you may have.</p>
+      <p>Getting started with therapy is rarely easy. We're happy to answer any questions you may have or chat to see if our approach is a good fit for your unique needs and goals. Send us an email below:</p>
       <form 
         action="https://formsubmit.co/cassandra@therapyintheclouds.ca"
         method="POST"

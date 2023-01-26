@@ -108,7 +108,7 @@ const Faq = () => {
                 ) : null}
              
             </li>
-          ))};
+          ))}
       
       </ul>
     </section>

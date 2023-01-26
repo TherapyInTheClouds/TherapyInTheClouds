@@ -2,11 +2,16 @@
 @use "./mixins" as *;
 
 footer {
+    .footerContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56vh;
+    }
     margin-top: 50px;
-    padding-top: 50px;
     background-color:  #bfccd9;
     background-size: cover;
-    height: 56vh;
+  
     div {
         @include flex(row, space-between);
         section {

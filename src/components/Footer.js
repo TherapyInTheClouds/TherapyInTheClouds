@@ -5,7 +5,7 @@ import footer from "../assets/cloudFooter.svg"
 const Footer = () => {
     return (
         <footer>
-            <div className="wrapper">
+            <div className="wrapper footerContent">
                 {/* <img className="footerImg" src={footer} alt="" /> */}
                 <form action="">
                     <h4>Get In Touch</h4>
@@ -47,6 +47,7 @@ const Footer = () => {
                     </div>
                 </section>
             </div>
+            <p>Designed and Built by <a href="https://www.linkedin.com/in/anjalee-benedict/">Anjalee Benedict</a> & <a href="https://www.linkedin.com/in/brittany-freitas/">Brittany Freitas</a></p>
         </footer>
     )
 }
