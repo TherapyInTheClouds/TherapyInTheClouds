@@ -63,7 +63,7 @@ const Bookings = () => {
       </div>
      
       
-    <div className="billingPolicies">
+    <div className="billingPolicies wrapper">
           <p>
       Please note: Therapy in the Clouds does not provide
         direct billing to insurance providers. Payment for the session is due at

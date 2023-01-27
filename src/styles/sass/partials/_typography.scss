@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 body {
     font-family: $mainFont;
@@ -23,7 +24,9 @@ h2 {
     text-align: center;
     // from landing page
     text-transform: uppercase;
+   
 }
+
 
 h3 {
     // from global styles
@@ -38,15 +41,25 @@ h3 {
 }
 
 .bio h4 {
-    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    font-size: clamp(1.6rem, 0.8611rem + 0.4444vw, 2rem);
+    display: inline;
+
+    @include tablet {
+        width: 30%;
+    }
 }
 
 .bio h3{
-     font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+     font-size: clamp(2.4rem, -0.4844rem + 4.75vw, 3rem);
+     margin: 25px 0px;
 }
 
 .getInTouch h3 {
-    font-size: clamp(1rem, -0.4844rem + 4.75vw, 4rem); 
+    font-size: clamp(4.5rem, -0.4844rem + 4.75vw, 4rem); 
+
+    @include tablet {
+        margin-bottom: 75px;
+    }
 }
 
 h4 {
@@ -56,23 +69,24 @@ h4 {
 }
 
 h5 {
-    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    font-size: clamp(1.4rem, 0.8611rem + 0.4444vw, 2rem);
     text-transform: uppercase;
     font-weight: 500;
 }
 
 p {
-    // from global styles
-    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    
+    font-size: clamp(1.5rem, 0.8611rem + 0.4444vw, 2rem);
   
 }
 
 .about p {
-      line-height: clamp(1.8rem, 2.3vw, 2.2rem);
+      line-height: clamp(2rem, 2.3vw, 2.2rem);
 }
 
 .headline p {
-    font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
+    font-size: clamp(1.6rem, -0.4844rem + 4.75vw, 2.1875rem);
+    
 }
 
 ol, ul {
@@ -111,7 +125,7 @@ footer i {
 }
 
 .service i {
-    font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);
+    font-size: 4rem;
 }
 
 
@@ -125,7 +139,7 @@ span {
 
 button {
     // From GlobalStyles
-    font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+    font-size: clamp(1.4rem, 0.8611rem + 0.4444vw, 2rem);
     // From landing Page
     // font-size: clamp(1.25rem, 0.8333rem + 1.3333vw, 2rem);
     // from bookings page

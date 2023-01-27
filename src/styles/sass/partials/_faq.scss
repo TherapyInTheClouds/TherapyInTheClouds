@@ -6,6 +6,9 @@
     height: 35vh;
     @include flex(row, center, center);
     background-image: url("../../../assets/headerImageClouds.jpg");
+    @include tablet {
+      height: 65vh;
+    }
   }
 
   .faqList {
@@ -21,9 +24,6 @@
     background-color: $tertiaryColour;
     padding: 25px 50px;  
     box-shadow: $listShadow;
-    //box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.3px;
-    //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    //box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     &:hover {
       cursor: pointer;
     }
@@ -39,11 +39,10 @@
 
   .question {
     @include flex(row, space-between, center);
-    p, i {
-      font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
-    }
     i {
+      font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem); 
       color: $primaryColour;
     }
+   
   }
 }

@@ -248,15 +248,27 @@ h3 {
 }
 
 .bio h4 {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  font-size: clamp(1.6rem, 0.8611rem + 0.4444vw, 2rem);
+  display: inline;
+}
+@media (max-width: 900px) {
+  .bio h4 {
+    width: 30%;
+  }
 }
 
 .bio h3 {
-  font-size: clamp(1rem, -0.4844rem + 4.75vw, 3rem);
+  font-size: clamp(2.4rem, -0.4844rem + 4.75vw, 3rem);
+  margin: 25px 0px;
 }
 
 .getInTouch h3 {
-  font-size: clamp(1rem, -0.4844rem + 4.75vw, 4rem);
+  font-size: clamp(4.5rem, -0.4844rem + 4.75vw, 4rem);
+}
+@media (max-width: 900px) {
+  .getInTouch h3 {
+    margin-bottom: 75px;
+  }
 }
 
 h4 {
@@ -266,21 +278,21 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  font-size: clamp(1.4rem, 0.8611rem + 0.4444vw, 2rem);
   text-transform: uppercase;
   font-weight: 500;
 }
 
 p {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  font-size: clamp(1.5rem, 0.8611rem + 0.4444vw, 2rem);
 }
 
 .about p {
-  line-height: clamp(1.8rem, 2.3vw, 2.2rem);
+  line-height: clamp(2rem, 2.3vw, 2.2rem);
 }
 
 .headline p {
-  font-size: clamp(1rem, -0.4844rem + 4.75vw, 2.1875rem);
+  font-size: clamp(1.6rem, -0.4844rem + 4.75vw, 2.1875rem);
 }
 
 ol, ul {
@@ -317,7 +329,7 @@ footer i {
 }
 
 .service i {
-  font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 4rem);
+  font-size: 4rem;
 }
 
 .approach i, .qualifications i {
@@ -329,7 +341,7 @@ span {
 }
 
 button {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  font-size: clamp(1.4rem, 0.8611rem + 0.4444vw, 2rem);
 }
 
 input, textarea {
@@ -385,7 +397,6 @@ button {
   text-transform: uppercase;
   transition: all 0.3s;
   position: relative;
-  overflow: hidden;
   z-index: 1;
 }
 button:after {
@@ -471,9 +482,13 @@ header .headerContent {
   flex-wrap: nowrap;
   height: 80vh;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   header .headerContent {
     height: 100vh;
+    margin-left: 20px;
+  }
+  header .headerContent h1 {
+    width: 75%;
   }
 }
 header .headerContent button {
@@ -503,7 +518,7 @@ header .headerContent button:hover {
   flex-wrap: nowrap;
   height: 25vh;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .headline {
     height: 50vh;
   }
@@ -519,6 +534,10 @@ header .headerContent button:hover {
   align-items: normal;
   flex-wrap: nowrap;
   min-height: 90vh;
+  align-items: center;
+}
+.offering h2 {
+  margin: 50px;
 }
 
 .services {
@@ -529,7 +548,7 @@ header .headerContent button:hover {
   flex-wrap: nowrap;
   min-height: 50vh;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .services {
     display: flex;
     flex-direction: column;
@@ -541,7 +560,7 @@ header .headerContent button:hover {
 .services .service {
   display: flex;
   flex-direction: row;
-  justify-content: normal;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   width: 25%;
@@ -554,7 +573,13 @@ header .headerContent button:hover {
   box-shadow: rgba(41, 41, 57, 0.25) 0px 6px 8px -2px;
   transform: scale(1.04);
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  .services .service {
+    width: 50%;
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 500px) {
   .services .service {
     width: 80%;
   }
@@ -582,6 +607,11 @@ header .headerContent button:hover {
   padding: 50px 0px;
   min-height: 80vh;
   background-color: rgb(242, 242, 243);
+}
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+  }
 }
 .about .approach,
 .about .qualifications {
@@ -611,6 +641,11 @@ header .headerContent button:hover {
 .about .bio {
   width: 50%;
 }
+@media (max-width: 900px) {
+  .about .bio {
+    width: 90%;
+  }
+}
 .about .bio h4 {
   border-bottom: 2px solid #d8c48c;
   width: 26%;
@@ -623,6 +658,16 @@ header .headerContent button:hover {
   width: 35%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 900px) {
+  .about .headshot {
+    width: 60%;
+  }
+}
+@media (max-width: 526px) {
+  .about .headshot {
+    width: 100%;
+  }
 }
 .about .headshot img {
   width: 90%;
@@ -666,6 +711,11 @@ header .headerContent button:hover {
   flex-wrap: nowrap;
   background-image: url("../../../assets/headerImageClouds.jpg");
 }
+@media (max-width: 900px) {
+  .book h2 {
+    height: 65vh;
+  }
+}
 .book .sectionContent {
   display: flex;
   flex-direction: row;
@@ -678,6 +728,16 @@ header .headerContent button:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: rgb(247, 247, 247);
 }
+@media (max-width: 900px) {
+  .book .sectionContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 0px;
+  }
+}
 .book .getInTouch {
   display: flex;
   flex-direction: column;
@@ -685,6 +745,11 @@ header .headerContent button:hover {
   align-items: flex-start;
   flex-wrap: nowrap;
   width: 40%;
+}
+@media (max-width: 900px) {
+  .book .getInTouch {
+    width: 95%;
+  }
 }
 .book .getInTouch button {
   width: 40%;
@@ -738,6 +803,11 @@ header .headerContent button:hover {
   flex-wrap: nowrap;
   width: 40%;
 }
+@media (max-width: 900px) {
+  .formContainer {
+    width: 95%;
+  }
+}
 .formContainer p {
   margin: 15px 0;
 }
@@ -751,6 +821,11 @@ header .headerContent button:hover {
   width: 100%;
   margin: 0;
 }
+@media (max-width: 900px) {
+  .billingPolicies {
+    margin-left: 10px;
+  }
+}
 
 .faq h2 {
   height: 35vh;
@@ -760,6 +835,11 @@ header .headerContent button:hover {
   align-items: center;
   flex-wrap: nowrap;
   background-image: url("../../../assets/headerImageClouds.jpg");
+}
+@media (max-width: 900px) {
+  .faq h2 {
+    height: 65vh;
+  }
 }
 .faq .faqList {
   display: flex;
@@ -803,10 +883,8 @@ header .headerContent button:hover {
   align-items: center;
   flex-wrap: nowrap;
 }
-.faq .question p, .faq .question i {
-  font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
-}
 .faq .question i {
+  font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem);
   color: #B2C6DF;
 }
 
