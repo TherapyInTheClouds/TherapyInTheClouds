@@ -4,13 +4,12 @@
 header {
   background-image: url("../../../assets/headerImageClouds.jpg");
   background-position-y: 20%;
-  
-  
 
   .headerContent {
+    margin: 0 auto;
+    max-width: 1200px;
     @include flex(column, center, left);
     height: 80vh;
-    
 
     @include tablet {
       height: 100vh;
