@@ -2,19 +2,17 @@
 @use "./mixins" as *;
 
 footer {
+    margin-top: 50px;
+    background-color:  #bfccd9;
+    background-size: cover;
+  
     .footerContent {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 56vh;
-    }
-    margin-top: 50px;
-    background-color:  #bfccd9;
-    background-size: cover;
-  
-    div {
-        @include flex(row, space-between);
         section {
+            @include flex(row, space-between);
             width: 50%;
             margin-top: 35px;
             .crisisSupport {
@@ -29,6 +27,9 @@ footer {
                     list-style-type: disc;
                     margin-left: 25px;
                 }
+                @include laptop {
+                    width: 100%;
+                }
             }
             .buttons {
                 @include flex(column, flex-start);
@@ -39,6 +40,13 @@ footer {
                     &::after {
                         background-color: darken($primaryColour, 5%);
                     }
+                    @include laptop {
+                        width: 47%;
+                    }
+                }
+                @include laptop {
+                    @include flex (row, flex-start, center, wrap);
+                    width: 100%;
                 }
             }
             .socialMedia {
@@ -57,6 +65,31 @@ footer {
                     margin-left: 10px;
                     color: darken($primaryColour, 15%);
                 }
+                @include laptop {
+                    @include flex (row, flex-start, center);
+                    padding-top: 10px;
+                    margin-top: 10px;
+                    .sx-verified-seal {
+                        width: 50%;
+                    }   
+                }
+                @include tabletSmall {
+                    width: 100%;
+                    @include flex (row, center, center);
+                    .small {
+                        font-size: 4rem;
+                    }
+                    .sx-verified-seal {
+                        width: 40%;
+                    }
+                }
+            }
+            @include laptop {
+                @include flex (column, flex-start, center)
+            }
+            @include tabletSmall {
+                width: 100%;
+                margin-top: 10px;
             }
         }
     
@@ -94,6 +127,12 @@ footer {
                 font-family: 'Nunito';
                 background-color: rgba(255, 255, 255, 0.461);
                 color: $fontColour;
+                @include laptop {
+                    height: 200px;
+                }
+                @include tabletSmall {
+                    height: 130px;
+                }
             }
             button {
                 margin-top: 15px;
@@ -107,6 +146,24 @@ footer {
                     color: $fontColour;
                 }
             }
+            @include tabletSmall {
+                width: 100%;
+            }
+        }
+        @include tabletSmall {
+            @include flex (column, center, flex-start);
+            height: 90vh;
+        }
+    }
+    .builtBy {
+        border-top: solid black 2px;
+        margin-top: 30px;
+        padding: 10px 0px;
+        text-align: center; 
+        font-size: clamp(1.4rem, 0.5vw, 1.5rem);
+        a {
+            font-size: clamp(1.4rem, 0.5vw, 1.5rem);
+            font-weight: 600;
         }
     }
 }
