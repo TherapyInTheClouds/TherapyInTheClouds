@@ -89,6 +89,25 @@ p {
     
 }
 
+.policy {
+    p {
+        font-size: clamp(1.4rem, 1.5vw, 1.7rem);
+        line-height: clamp(2rem, 2.3vw, 2.2rem);
+    }
+
+    h3 {
+        font-size: clamp(1.6rem, 1.5vw, 2.2rem);
+        color: darken($primaryColour, 15%);
+    }
+    li {
+        list-style: disc;
+    }
+    .address li {
+        list-style: none;
+        line-height: clamp(1.5rem, 2vw, 2rem);
+    }
+}
+
 ol, ul {
     font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
     line-height: clamp(1.8rem, 2.3vw, 2.5rem);
@@ -134,7 +153,8 @@ footer i {
 }
 
 span {
-    color: $primaryColour
+    color: $fontColour;
+    font-weight: 700;
 }
 
 button {

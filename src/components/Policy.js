@@ -6,7 +6,7 @@ const Policy = () => {
             <div className="headerImg">
                 <h2>Privacy Policy</h2>
             </div>
-            <div className="page container">
+            <div className="page">
                 <p>
                     Therapy in the Clouds upholds the privacy of our clients and acknowledges the need for
                     transparency in the ways in which we do so. Thus, Therapy in the Clouds has created this
@@ -59,14 +59,14 @@ const Policy = () => {
                 <p>
                     Security measures that Therapy in the Cloud has in place to protect your personal health
                     information includes:
-                    <ul>
-                        <li>Policies and procedures to govern the privacy of client information</li>
-                        <li>Limiting access to your personal health information to only those required to deliver service to you.</li>
-                        <li>Use of passwords to access your personal health information.</li>
-                        <li>Storing your personal health information on a secure and protected network.</li>
-                        <li>Permanently destroying your personal health information in accordance with the Therapy in the Cloud retention schedule (see below).</li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>Policies and procedures to govern the privacy of client information</li>
+                    <li>Limiting access to your personal health information to only those required to deliver service to you.</li>
+                    <li>Use of passwords to access your personal health information.</li>
+                    <li>Storing your personal health information on a secure and protected network.</li>
+                    <li>Permanently destroying your personal health information in accordance with the Therapy in the Cloud retention schedule (see below).</li>
+                </ul>
 
                 <h3>Limits on Confidentiality of Personal Health Information</h3>
                 <p>
@@ -197,7 +197,7 @@ const Policy = () => {
                     resolving privacy matters related to our clinic:
                 </p>
 
-                <h3>Information and Privacy Commissioner of Ontario</h3>
+                <h3 className="address">Information and Privacy Commissioner of Ontario</h3>
                 <ul className="address">
                     <li>1-800-387-0073</li>
                     <li>https://www.ipc.on.ca/about-us/contact-us/</li>
