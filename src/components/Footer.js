@@ -7,14 +7,14 @@ const Footer = () => {
         <footer>
             <div className="wrapper footerContent">
                 {/* <img className="footerImg" src={footer} alt="" /> */}
-                <form action="">
+                <form action="https://formsubmit.co/cassandra@therapyintheclouds.ca" method="POST">
                     <h4>Get In Touch</h4>
                     <label htmlFor="name" className="sr-only">Your Name</label>
-                    <input id="name" type="text" placeholder="Your Name" />
+                    <input name="name" id="name" type="text" placeholder="Your Name" />
                     <label htmlFor="email" className="sr-only">Your Email</label>
-                    <input id="email" type="email" placeholder="Your Email" />
+                    <input name="email" id="email" type="email" placeholder="Your Email" />
                     <label htmlFor="message" className="sr-only">Your Message</label>
-                    <textarea id="message" placeholder="Your Message" rows="4" ></textarea>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="4" ></textarea>
                     <button>Send Message</button>
                 </form>
                 <section>

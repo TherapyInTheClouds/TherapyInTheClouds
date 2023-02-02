@@ -21,12 +21,6 @@ const Bookings = () => {
         <label for="_captcha"></label>
         <input type="hidden" name="_captcha" value="false" />
 
-        <label for="_next"></label>
-        <input
-          type="hidden"
-          name="_next"
-          value="https://therapyintheclouds.ca/pages/thanks.html"
-        />
         <div class="formItem">
           <label for="name">Name</label>
           <input className="name" type="text" id="name" name="name" required />

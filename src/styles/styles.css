@@ -301,7 +301,7 @@ ol, ul {
 }
 
 li {
-  font-size: clamp(1rem, 0.8611rem + 0.4444vw, 2rem);
+  font-size: clamp(1.5rem, 0.8611rem + 0.4444vw, 2rem);
 }
 
 footer p, footer li {
@@ -558,12 +558,15 @@ header .headerContent button:hover {
   }
 }
 .services .service {
+  padding: 0px 45px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 25%;
+  width: calc(33% - 20px);
+  max-width: 375px;
+  margin: 0px 10px;
   min-height: 50vh;
   -webkit-animation: slideUp 2s;
           animation: slideUp 2s;
@@ -575,7 +578,7 @@ header .headerContent button:hover {
 }
 @media (max-width: 900px) {
   .services .service {
-    width: 50%;
+    width: 100%;
     margin: 10px 0px;
   }
 }
@@ -634,6 +637,7 @@ header .headerContent button:hover {
 }
 .about .qualsList {
   padding-left: 30px;
+  margin-bottom: 20px;
 }
 .about .qualsList li {
   list-style-type: circle;

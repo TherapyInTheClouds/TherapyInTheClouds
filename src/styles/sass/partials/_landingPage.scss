@@ -67,6 +67,7 @@ header {
   @include flex(column, space-evenly);
   min-height: 90vh;
   align-items: center;
+  
 
   h2 {
     margin: 50px;
@@ -77,14 +78,17 @@ header {
 .services {
   @include flex(row, space-evenly, center);
   min-height: 50vh;
-
+  
   @include tablet {
     @include flex(column, space-evenly, center)
   }
 
-  .service {
+  .service  {
+    padding: 0px 45px;
     @include flex(row, center, center);
-    width: 25%;
+    width: calc(33% - 20px);
+    max-width: 375px;
+    margin: 0px 10px;
     min-height: 50vh;
     animation: slideUp 2s;
     transition: all .3s cubic-bezier(0,0,.5,1);
@@ -94,7 +98,7 @@ header {
     }
     
     @include tablet {
-      width: 50%;
+      width: 100%;
       margin: 10px 0px;
     }
 
@@ -148,6 +152,7 @@ header {
 
   .qualsList {
      padding-left: 30px;
+     margin-bottom: 20px;
       li {
     list-style-type: circle;
   }  

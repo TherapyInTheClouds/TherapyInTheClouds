@@ -109,7 +109,7 @@ const LandingPage = (props) => {
         </div>
       </section>
 
-      <section ref={aboutRef} className="offering">
+      <section ref={aboutRef} className="offering wrapper">
         <h2>Our Services</h2>
         <div className="services">
           <Link className="container service centered" to="/Bookings">
