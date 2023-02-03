@@ -8,16 +8,19 @@
         background-image: url("../../../assets/headerImageClouds.jpg");
     }
     .page {
-        background-color: $whiteColour;
+        background-color: #F2F2F3;
         border-radius: 20px;
         box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
         transition: all .3s cubic-bezier(0, 0, .5, 1);
         margin: 60px auto;
-        width: 70%;
+        width: 80%;
         @include tabletSmall {
-            width: 90%;
+            width: 100%;
+            box-shadow: none;
+            border-radius: none;
+            margin: 0px;
         }
-        max-width: 1200px;
+        max-width: 1500px;
         padding: 30px 60px;
     }
     h3 {

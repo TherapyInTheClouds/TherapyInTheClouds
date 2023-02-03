@@ -5,12 +5,15 @@ footer {
     margin-top: 50px;
     background-color:  #bfccd9;
     background-size: cover;
+
+    h4 {
+        margin-top: 30px;
+    }
   
     .footerContent {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 56vh;
         section {
             @include flex(row, space-between);
             width: 50%;
@@ -28,17 +31,23 @@ footer {
                     margin-left: 25px;
                 }
                 @include laptop {
-                    width: 100%;
+                    width: 85%;
                 }
             }
             .buttons {
                 @include flex(column, flex-start);
                 width: 30%;
                 margin-top: 10px;
+               
                 button {
                     width: 100%;
+                    background-color: white;
+                    border: 1px solid white;
+                    &::before {
+                        background-color: white;
+                    }
                     &::after {
-                        background-color: darken($primaryColour, 5%);
+                        background-color: darken(white, 5%);
                     }
                     @include laptop {
                         width: 47%;
@@ -75,6 +84,7 @@ footer {
                 }
                 @include tabletSmall {
                     width: 100%;
+                    border: none;
                     @include flex (row, center, center);
                     .small {
                         font-size: 4rem;
@@ -156,7 +166,7 @@ footer {
         }
     }
     .builtBy {
-        border-top: solid black 2px;
+        border-top: solid #00000059 1px;
         margin-top: 30px;
         padding: 10px 0px;
         text-align: center; 
