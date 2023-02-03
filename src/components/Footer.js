@@ -32,7 +32,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="buttons">
-                        <button><Link>Book Now</Link></button>
+                        <button><Link to="/services">Book Now</Link></button>
                         <button><Link to="/policy">Privacy Policy</Link></button>
                         <div className="socialMedia">
                             <a href="https://www.psychologytoday.com/profile/908641" class="sx-verified-seal">

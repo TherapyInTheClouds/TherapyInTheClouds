@@ -112,7 +112,7 @@ const LandingPage = (props) => {
       <section ref={aboutRef} className="offering wrapper">
         <h2>Our Services</h2>
         <div className="services">
-          <Link className="container service centered" to="/Bookings">
+          <Link className="container service centered" to="/contact">
             <div>
               <i class="fa-solid fa-phone"></i>
               <h3>Free 15 Minute Phone Consultation</h3>
@@ -120,7 +120,7 @@ const LandingPage = (props) => {
                 Determine your initial therapeutic fit prior to booking your
                 first session through a call with our team.
               </p>
-              <button>Book Now</button>
+              <button>Contact</button>
             </div>
           </Link>
 

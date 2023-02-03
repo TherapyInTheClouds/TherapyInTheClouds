@@ -30,7 +30,7 @@ const Nav = (props) => {
                <div className="navBar">
                   <ul>
                      <li><Link to="/">Home</Link></li>
-                     <li><Link path={`/#servicesLink`}>Booking</Link></li>
+                     <li><Link to="/services">Services</Link></li>
                      <li><Link to="/faq">FAQ</Link></li>
                      <li> <Link to="/policy">Privacy Policy</Link></li>
                   </ul>
@@ -48,10 +48,10 @@ const Nav = (props) => {
             </button>
             <nav>
                <ul>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link path={`/#servicesLink`}>Booking</Link></li>
-                  <li><Link to="/faq">FAQ</Link></li>
-                  <li> <Link to="/policy">Privacy Policy</Link></li>
+                  <li><Link to="/" onClick={toggleClass}>Home</Link></li>
+                  <li><Link to="/services" onClick={toggleClass}>Services</Link></li>
+                  <li><Link to="/faq" onClick={toggleClass}>FAQ</Link></li>
+                  <li> <Link to="/policy" onClick={toggleClass}>Privacy Policy</Link></li>
                </ul>
             </nav>
          </div>

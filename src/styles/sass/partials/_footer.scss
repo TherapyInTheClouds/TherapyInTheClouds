@@ -5,12 +5,8 @@ footer {
     margin-top: 50px;
     background-color:  #bfccd9;
     background-size: cover;
-
-    h4 {
-        margin-top: 30px;
-    }
-  
     .footerContent {
+        padding-top: 45px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,7 +50,7 @@ footer {
                     }
                 }
                 @include laptop {
-                    @include flex (row, flex-start, center, wrap);
+                    @include flex (row, center, center, wrap);
                     width: 100%;
                 }
             }
@@ -160,9 +156,12 @@ footer {
                 width: 100%;
             }
         }
+        @include tablet {
+            padding-top: 0px;
+        }
         @include tabletSmall {
             @include flex (column, center, flex-start);
-            height: 90vh;
+            padding: 50px 0 40px;
         }
     }
     .builtBy {
@@ -173,7 +172,14 @@ footer {
         font-size: clamp(1.4rem, 0.5vw, 1.5rem);
         a {
             font-size: clamp(1.4rem, 0.5vw, 1.5rem);
+            line-height: clamp(1.9rem, 0.5vw, 2rem);
             font-weight: 600;
         }
+        @include tabletSmall {
+            margin-top: 0px;
+        }
+    }
+    @include tabletSmall {
+        margin-top: 0px;
     }
 }

@@ -14,14 +14,14 @@
         transition: all .3s cubic-bezier(0, 0, .5, 1);
         margin: 60px auto;
         width: 80%;
+        max-width: 1500px;
+        padding: 30px 60px;
         @include tabletSmall {
             width: 100%;
             box-shadow: none;
-            border-radius: none;
+            border-radius: 0px;
             margin: 0px;
         }
-        max-width: 1500px;
-        padding: 30px 60px;
     }
     h3 {
         margin: 25px 0 10px;

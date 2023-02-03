@@ -201,3 +201,16 @@ header {
     opacity: 1;
   }
 }
+
+// header img on services component
+
+.servicesComponent {
+  .headerImg {
+    @include flex(row, center, center);
+    height: 35vh;
+    background-image: url("../../../assets/headerImageClouds.jpg");
+  }
+  .services {
+    margin: 100px auto;
+  }
+}

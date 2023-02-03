@@ -13,7 +13,17 @@ nav {
     .navIcon {
         i {
             color: $tertiaryColour;
+            &:hover {
+                color: darken($color: $primaryColour, $amount: 20);
+            }
         }
+        &::after {
+            background-color: #c4cdd6;
+        }
+        &::before {
+            background-color: #c4cdd6;
+        }
+        background-color: #c4cdd6;
         display: none;
         min-width: 35px;
         width: 50px;
@@ -71,15 +81,31 @@ nav {
     ul {
         height: 100vh;
         @include flex (column, center, center);
-        margin-left: 30px;
     }
     li {
         padding-bottom: 30px;
     }
+    a {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        &:hover {
+            color: $tertiaryColour;
+        }
+    }
     .navCloseIcon {
         i {
             color: $tertiaryColour;
+            &:hover {
+                color: darken($color: $primaryColour, $amount: 20);
+            }
         }
+        &::after {
+            background-color: #c4cdd6;
+        }
+        &::before {
+            background-color: #c4cdd6;
+        }
+        background-color: #c4cdd6;
         display: none;
         position: absolute;
         top: 10px;
@@ -87,7 +113,6 @@ nav {
         min-width: 35px;
         width: 50px;
         z-index: 1;
-
         @include tabletSmall {
             display: block;
         }
