@@ -1,19 +1,25 @@
 // COLOURS:
-$primaryColour: #bfccd9;
-$primaryColour: #B2C6DF;
-//$primaryColour: rgb(141, 176, 221);
-// $primaryColour: #C1CFD8;
+// blue colour from darker header image
+$primaryColour: #9cb9ff;
+// logo blue
+// $primaryColour: #8db0dd;
 $secondaryColour: rgb(247, 247, 247);
 $tertiaryColour: rgb(242, 242, 243);
-// $tertiaryColour: rgb(238, 238, 238);
 $quarternaryColour: #f5d787;
-//$quarternaryColour: #C89933;
 $fontColour: #000;
 $whiteColour: #FFF;
 $listShadow: rgba(33, 35, 38, 0.15) 0px 10px 10px -10px;
 $buttonShadow: 0px 5px 10px rgba(61, 61, 61, 0.1);
 
 
+// Alternate colours
+//$primaryColour: #bfccd9;
+//$primaryColour: #B2C6DF;
+//$primaryColour: rgb(141, 176, 221);
+//$primaryColour: #C1CFD8;
+//$tertiaryColour: rgb(238, 238, 238);
+//$quarternaryColour: #C89933;
+
 // FONTS:
-$mainFont: 'Montserrat', sans-serif;
+$mainFont: 'Montserrat';
 $accentFont: 'Nunito'; 

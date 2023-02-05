@@ -2,7 +2,7 @@
 @use "./mixins" as *;
 
 header {
-  background-image: url("../../../assets/headerImageClouds.jpg");
+  background-image: url("../../../assets/headerImageCloudsDark.jpg");
   background-position-y: 20%;
 
   .headerContent {
@@ -209,7 +209,7 @@ header {
   .headerImg {
     @include flex(row, center, center);
     height: 35vh;
-    background-image: url("../../../assets/headerImageClouds.jpg");
+    background-image: url("../../../assets/headerImageCloudsDark.jpg");
   }
   .services {
     margin: 100px auto;
