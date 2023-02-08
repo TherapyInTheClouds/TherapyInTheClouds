@@ -1,5 +1,3 @@
-import headerImage from "../assets/headerImageClouds.jpg"
-
 const Policy = () => {
     return (
         <section className="policy">

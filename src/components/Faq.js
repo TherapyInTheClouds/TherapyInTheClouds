@@ -1,12 +1,10 @@
-import { array } from "i/lib/util";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Faq = () => {
   const [showAnswer, setShowAnswer] = useState(null);
 
   const displayAnswer = (i) => {
-    if (showAnswer == i) {
+    if (showAnswer === i) {
       return setShowAnswer(null)
     }
     setShowAnswer(i)
