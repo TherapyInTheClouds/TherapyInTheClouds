@@ -9,7 +9,7 @@
     height: 35vh;
     width: 100%;
     @include flex(row, center, center);
-    background-image: url("../../../assets/headerImageCloudsDark.jpg");
+    background-image: url("../../../assets/headerImageClouds.jpg");
     @include tablet {
       height: 65vh;
     }
