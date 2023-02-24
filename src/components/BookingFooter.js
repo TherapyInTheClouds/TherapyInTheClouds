@@ -1,27 +1,14 @@
 import { Link } from "react-router-dom";
 import badge from "../assets/psychTodayBadge.png"
-//import footer from "../assets/cloudFooter.svg"
-
-const Footer = (props) => {
-
-    
 
 
+const BookingFooter = () => {
 
-    
+ 
     return (
         <footer>
             <div className="wrapper footerContent">
-                <form  action="https://formsubmit.co/cassandra@therapyintheclouds.ca" method="POST">
-                    <h4>Get In Touch</h4>
-                    <label htmlFor="name" className="sr-only">Your Name</label>
-                    <input name="name" id="name" type="text" placeholder="Your Name" />
-                    <label htmlFor="email" className="sr-only">Your Email</label>
-                    <input name="email" id="email" type="email" placeholder="Your Email" />
-                    <label htmlFor="message" className="sr-only">Your Message</label>
-                    <textarea name="message" id="message" placeholder="Your Message" rows="4" ></textarea>
-                    <button>Send Message</button>
-                </form>
+                
                 <section>
                     <div className="crisisSupport">
                         <p>*If you or someone you know is experiencing an emergency, a crisis or is in immediate danger, please call 9-1-1 or attend your nearest hospital or emergency department.</p>
@@ -55,4 +42,4 @@ const Footer = (props) => {
     )
 }
 
-export default Footer;
+export default BookingFooter;

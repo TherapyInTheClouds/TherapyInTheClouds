@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Services = () => {
     return (
+        <>
+       
         <section className="servicesComponent">
             <div className="headerImg">
                 <h2>Services</h2>
@@ -49,6 +52,9 @@ const Services = () => {
                 </div>
             </div>
         </section>
+        <Footer/>
+         
+        </>
     )
 }
 

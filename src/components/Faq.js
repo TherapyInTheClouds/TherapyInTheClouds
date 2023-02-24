@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 const Faq = () => {
   const [showAnswer, setShowAnswer] = useState(null);
@@ -9,12 +10,7 @@ const Faq = () => {
     }
     setShowAnswer(i)
     
-    //on click of the display answer icon, run a function that change the state to show answer only for the answer who's question was clicked on
-    // if(indexOf() === indexOf()){
-      //setShowAnswer(!showAnswer)
-        //  if (faqItem.question[index] === faqItem.answer[index]) {
-        //    setShowAnswer(!showAnswer)
-        //  } 
+   
       }
 
   const faqData = [
@@ -27,7 +23,7 @@ const Faq = () => {
     {
       question: "What can I expect during my first session and beyond?",
       answer:
-        "During your first session, the therapist will work to get to know you and begin to explore the path which has led you toseeking therapeutic support. We are passionate about building rapport with our clients, which works towards creating a safe space for healing and growth. During this initial session, the therapist will collaboratively explore and construct initialgoals for service with you.",
+        "During your first session, the therapist will work to get to know you and begin to explore the path which has led you to seeking therapeutic support. We are passionate about building rapport with our clients, which works towards creating a safe space for healing and growth. During this initial session, the therapist will collaboratively explore and construct initial goals for service with you.",
     },
 
     {
@@ -63,7 +59,7 @@ const Faq = () => {
     {
       question: "How is payment processed?",
       answer:
-        "Therapy in the Clouds does not provide direct billing to insurance providers. Payment will be due at the start of the session. Clients will be provided with a receipt for service, which will include the therapist&#39;s name, designation, and registration number. Payment is accepted by e-transfer only.",
+        "Therapy in the Clouds does not provide direct billing to insurance providers. Payment will be due at the start of the session. Clients will be provided with a receipt for service, which will include the therapist's name, designation, and registration number. Payment is accepted by e-transfer only.",
     },
 
     {
@@ -73,15 +69,11 @@ const Faq = () => {
     },
   ];
 
-  // const handleExpandQ = () => {
-  //   faqData.forEach((faqItem) => {
-  //     console.log(faqItem.question);
-  //   });
-  // };
 
   return (
+    <>
     <section className="faq">
-      <h2>FAQ</h2>
+      <h2>Frequently Asked Questions</h2>
       <ul className="wrapper faqList">
         {faqData.map((faqItem, i) => (
             <li onClick={() => displayAnswer(i)} className="faqItem" key={faqItem.question}>
@@ -110,6 +102,8 @@ const Faq = () => {
       
       </ul>
     </section>
+     <Footer/>
+     </>
   );
 };
 

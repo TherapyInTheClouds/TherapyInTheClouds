@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
 import headshot from "../assets/headshot.jpg";
+import Footer from "../components/Footer";
 
-const LandingPage = (props) => {
+const LandingPage = () => {
   const [showMoreQual, setShowMoreQual] = useState(false);
   const [showMoreApproach, setShowMoreApproach] = useState(false);
 
@@ -12,12 +13,14 @@ const LandingPage = (props) => {
   const scrollInto = () =>
     aboutRef.current?.scrollIntoView({ behavior: "smooth" });
 
+   
+
   return (
     <>
       <header>
         <div className="headerContent wrapper">
           <h1>Welcome to Therapy in the Clouds.</h1>
-          <p>Where we take therapy off the couch and into the virtual clouds!</p>
+          <p className="SubTitle">Where we take therapy off the couch and into the virtual clouds!</p>
           <button onClick={scrollInto}>Learn More</button>
         </div>
       </header>
@@ -155,6 +158,7 @@ const LandingPage = (props) => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

@@ -1,5 +1,14 @@
+import { useLayoutEffect } from "react"
+import Footer from "../components/Footer";
+
 const Policy = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
+        <>
         <section className="policy">
             <div className="headerImg">
                 <h2>Privacy Policy</h2>
@@ -205,6 +214,8 @@ const Policy = () => {
                 </ul>
             </div>
         </section>
+         <Footer/>
+         </>
     )
 }
 export default Policy;

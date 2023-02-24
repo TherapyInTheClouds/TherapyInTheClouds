@@ -3,13 +3,14 @@ import { Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import Faq from "./components/Faq";
 import LandingPage from "./components/LandingPage";
-import Footer from "./components/Footer";
+
 import Bookings from "./components/Bookings";
 import Policy from "./components/Policy";
 import Services from "./components/Services"
 
-function App() {
 
+function App() {
+  
   return (
     <div> 
       <Nav/>
@@ -18,9 +19,9 @@ function App() {
         <Route path='/services' element={<Services/>}/>
         <Route exact path='/faq' element={<Faq/>}/>
         <Route path='/policy' element={<Policy/>}/>
-        <Route path='/contact' element={<Bookings />} />
+        <Route path='/contact' element={<Bookings/>} />
       </Routes>
-      <Footer/>
+     
     </div>
   );
 }

@@ -16,11 +16,13 @@ nav {
         background-color: $primaryColour;
         i {
             color: $tertiaryColour;
-            &:hover {
-                color: darken($color: $primaryColour, $amount: 20);
-            }
         }
-       
+       &:before {
+    background-color: $primaryColour;
+       }
+       &:after {
+        background-color: $primaryColour;;
+       }
         
         display: none;
         min-width: 35px;
@@ -94,11 +96,13 @@ nav {
         background-color: $primaryColour;
         i {
             color: $tertiaryColour;
-            &:hover {
-                color: darken($color: $primaryColour, $amount: 20);
-            }
         }
-       
+        &:after{
+            background-color: $primaryColour;
+        }
+        &:before {
+            background-color: $primaryColour;
+        }
         display: none;
         position: absolute;
         top: 10px;
