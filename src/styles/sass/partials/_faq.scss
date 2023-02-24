@@ -4,6 +4,7 @@
 .faq {
   h2 {
     height: 35vh;
+    width: 80%;
     @include flex(row, center, center);
     background-image: url("../../../assets/headerImageClouds.jpg");
     @include tablet {
