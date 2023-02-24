@@ -220,7 +220,7 @@ header {
   .headerImg {
     @include flex(row, center, center);
     height: 35vh;
-    background-image: url("../../../assets/headerImageClouds.jpg");
+    background-image: url("../../../assets/headerImageCloudsDark.jpg");
   }
   .services {
     margin: 100px auto;
