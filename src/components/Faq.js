@@ -73,7 +73,10 @@ const Faq = () => {
   return (
     <>
     <section className="faq">
-      <h2>Frequently Asked Questions</h2>
+      <div className="header">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      
       <ul className="wrapper faqList">
         {faqData.map((faqItem, i) => (
             <li onClick={() => displayAnswer(i)} className="faqItem" key={faqItem.question}>

@@ -2,15 +2,23 @@
 @use "./mixins" as *;
 
 .faq {
-  h2 {
-    height: 35vh;
-    width: 80%;
-    @include flex(row, center, center);
+  .header {
     background-image: url("../../../assets/headerImageClouds.jpg");
-    @include tablet {
-      height: 65vh;
-    }
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+    h2 {
+    width: 80%;
+    text-align: center;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
   }
+  }
+  
 
   .faqList {
     @include flex(column, space-between);
@@ -24,6 +32,10 @@
     margin-bottom: 20px;
     background-color: $tertiaryColour;
     padding: 25px 50px;  
+
+    @include tabletSmall {
+      padding: 25px 20px
+    }
     box-shadow: $listShadow;
     &:hover {
       cursor: pointer;
@@ -39,6 +51,7 @@
   }
 
   .question {
+    gap: 10px;
     @include flex(row, space-between, center);
     i {
       font-size: clamp(1.125rem, 0.7083rem + 1.3333vw, 2.3rem); 
