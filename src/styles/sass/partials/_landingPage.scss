@@ -4,6 +4,14 @@
 header {
   background-image: url("../../../assets/headerImageCloudsDark.jpg");
   background-position-y: 20%;
+  @include tablet{
+    background-position-y: 20%;
+    background-position-x: 50%;
+  }
+  @include mobileLarge {
+    background-position-y: 25%;
+    background-position-x: 55%;
+  }
 
   .headerContent {
     margin: 0 auto;
