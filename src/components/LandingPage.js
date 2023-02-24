@@ -17,6 +17,7 @@ const LandingPage = (props) => {
       <header>
         <div className="headerContent wrapper">
           <h1>Welcome to Therapy in the Clouds.</h1>
+          <p>Where we take therapy off the couch and into the virtual clouds!</p>
           <button onClick={scrollInto}>Learn More</button>
         </div>
       </header>

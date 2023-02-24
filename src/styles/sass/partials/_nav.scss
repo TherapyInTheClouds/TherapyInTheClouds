@@ -11,20 +11,17 @@ nav {
         display: flex;
         justify-content: space-between;
     }
+    
     .navIcon {
+        background-color: $primaryColour;
         i {
             color: $tertiaryColour;
             &:hover {
                 color: darken($color: $primaryColour, $amount: 20);
             }
         }
-        &::after {
-            background-color: #c4cdd6;
-        }
-        &::before {
-            background-color: #c4cdd6;
-        }
-        background-color: #c4cdd6;
+       
+        
         display: none;
         min-width: 35px;
         width: 50px;
@@ -94,19 +91,14 @@ nav {
         }
     }
     .navCloseIcon {
+        background-color: $primaryColour;
         i {
             color: $tertiaryColour;
             &:hover {
                 color: darken($color: $primaryColour, $amount: 20);
             }
         }
-        &::after {
-            background-color: #c4cdd6;
-        }
-        &::before {
-            background-color: #c4cdd6;
-        }
-        background-color: #c4cdd6;
+       
         display: none;
         position: absolute;
         top: 10px;
