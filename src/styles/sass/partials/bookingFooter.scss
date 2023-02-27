@@ -7,14 +7,14 @@ footer {
     background-color: $primaryColour;
     //background-color:  #bfccd9;
     background-size: cover;
-    .footerContent {
+    .bookingFooterContent {
         padding-top: 45px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         section {
             @include flex(row, space-between);
-            width: 50%;
+            width: 80%;
             margin-top: 35px;
             .crisisSupport {
                 @include flex(column);
@@ -33,7 +33,9 @@ footer {
                 }
             }
             .buttons {
-                @include flex(column, flex-start);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 width: 30%;
                 margin-top: 10px;
                
@@ -57,16 +59,18 @@ footer {
                 }
             }
             .socialMedia {
-                @include flex(row, center, center);
-                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 25px;
                 padding-top: 20px;
                 border-top: 3px solid $secondaryColour;
                 .sx-verified-seal {
-                    width: 100%;
+                    width: 40%;
                 }
                 img {
                     border-radius: 20px;
-                    width: 95%;
+                    width: 100%;
                 }
                 i {
                     margin-left: 10px;
@@ -88,7 +92,7 @@ footer {
                         font-size: 4rem;
                     }
                     .sx-verified-seal {
-                        width: 40%;
+                        width: 22%;
                     }
                 }
             }
@@ -185,4 +189,3 @@ footer {
         margin-top: 0px;
     }
 }
-

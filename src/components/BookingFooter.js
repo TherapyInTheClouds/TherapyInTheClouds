@@ -7,10 +7,10 @@ const BookingFooter = () => {
  
     return (
         <footer>
-            <div className="wrapper footerContent">
+            <div className="wrapper bookingFooterContent">
                 
                 <section>
-                    <div className="crisisSupport">
+                    <div className="crisisSupport ">
                         <p>*If you or someone you know is experiencing an emergency, a crisis or is in immediate danger, please call 9-1-1 or attend your nearest hospital or emergency department.</p>
                         <p>*If you are in need of crisis support lines:</p>
                         <ul>
