@@ -30,7 +30,7 @@ const Footer = (props) => {
                             <li>Toronto distress center (416 408 4357)</li>
                             <li>Gerstein center (416 929 5200)</li>
                             <li>Assaulted women’s helpline (1 866 863 0511)</li>
-                            <li>Kids help phone (1800 668 6868)</li>
+                            <li>Kids help phone (1 800 668 6868)</li>
                             <li>310 COPE – York Support Services Network (1 855 310 2673)</li>
                             <li>Durham crisis and mental health line (1 800 742 1890)</li>
                             <li>Oakville distress center (905 849 4541)</li>
