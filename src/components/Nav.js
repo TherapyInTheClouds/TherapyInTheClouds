@@ -30,6 +30,7 @@ const Nav = (props) => {
                <div className="navBar">
                   <ul>
                      <li><Link to="/">Home</Link></li>
+                     <li><a href="#meetTheFounder">Meet The Founder</a></li>
                      <li><Link to="/services">Services</Link></li>
                      <li><Link to="/faq">FAQ</Link></li>
                      <li> <Link to="/policy">Privacy Policy</Link></li>

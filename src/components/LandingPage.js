@@ -27,14 +27,14 @@ const LandingPage = () => {
 
       <section className="headline wrapper">
         <p>
-          Therapy In the Clouds is a virtual wellness clinic offering
+          Therapy In the Clouds is a virtual private practice offering
           psychotherapy and counselling services across the province of Ontario.
           We work with you to unpack the lens through which you see yourself
           today, to change how you view yourself tomorrow.
         </p>
       </section>
 
-      <section className="about">
+      <section ref={aboutRef} id="meetTheFounder" className="about">
         <div className="wrapper about">
           <div className="bio">
             
@@ -100,6 +100,9 @@ const LandingPage = () => {
                 <li>
                   Cognitive Behaviour Therapy, University of Toronto O.I.S.E.
                 </li>
+                <li>
+                  Applied Suicide Intervention Skills Training
+                </li>
               </ul>
             ) : null}
           </div>
@@ -112,8 +115,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
-      <section ref={aboutRef} className="offering wrapper">
+      <section className="offering wrapper">
         <h2>Services</h2>
         <div className="services">
           <Link className="container service centered" to="/contact">
