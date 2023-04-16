@@ -51,9 +51,12 @@ const Nav = (props) => {
             <nav>
                <ul>
                   <li><Link to="/" onClick={toggleClass}>Home</Link></li>
+                  <li><a  onClick={toggleClass} href="#meetTheFounder">Meet The Founder</a></li>
                   <li><Link to="/services" onClick={toggleClass}>Services</Link></li>
                   <li><Link to="/faq" onClick={toggleClass}>FAQ</Link></li>
                   <li> <Link to="/policy" onClick={toggleClass}>Privacy Policy</Link></li>
+                  <li> <Link to="/contact" onClick={toggleClass}>Contact Us</Link></li>
+               
                </ul>
             </nav>
          </div>
