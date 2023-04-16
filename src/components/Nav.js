@@ -33,6 +33,7 @@ const Nav = (props) => {
                      <li><Link to="/services">Services</Link></li>
                      <li><Link to="/faq">FAQ</Link></li>
                      <li> <Link to="/policy">Privacy Policy</Link></li>
+                     <li> <Link to="/contact">Contact Us</Link></li>
                   </ul>
                </div>
             </div>

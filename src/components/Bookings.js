@@ -11,7 +11,7 @@ const Bookings = () => {
   return (
     <>
     <section className="book">
-      <h2>Contact</h2>
+      <h2>Contact Us</h2>
       <div className="sectionContent wrapper">
       <div className="getInTouch">
      <h3>Ready to get started? Send us an email with any questions you may have. </h3>
