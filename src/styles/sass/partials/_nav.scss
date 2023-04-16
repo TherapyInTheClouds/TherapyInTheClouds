@@ -4,7 +4,12 @@
 nav {
     padding-top: 10px;
     background-color: $primaryColour;
-    //background-color: #c4cdd6;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+ 
     .navWrapper {
         margin: 0 auto;
         max-width: 1600px;
@@ -50,6 +55,7 @@ nav {
         justify-content: space-between;
         padding: 10px 50px;
         align-items: center;
+       
         ul {
             gap: 50px;
             @include flex(row, center);

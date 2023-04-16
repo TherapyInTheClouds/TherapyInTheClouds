@@ -29,7 +29,7 @@ const Faq = () => {
     {
       question: "What are your virtual hours of operation?",
       answer:
-        "As a virtual therapy space we offer individual and couples psychotherapy and counselling sessions during evenings and weekends. Here at Therapy in the Clouds we recognize the potential barriers of accessing support during traditional operating hours.",
+        "As a virtual private practice we offer individual and couples psychotherapy and counselling sessions during evenings and weekends. Here at Therapy in the Clouds we recognize the potential barriers of accessing support during traditional operating hours.",
     },
 
     {
@@ -59,7 +59,7 @@ const Faq = () => {
     {
       question: "How is payment processed?",
       answer:
-        "Therapy in the Clouds does not provide direct billing to insurance providers. Payment will be due at the start of the session. Clients will be provided with a receipt for service, which will include the therapist's name, designation, and registration number. Payment is accepted by e-transfer only.",
+        "Therapy in the Clouds does not provide direct billing to insurance providers. Payment will be due at the start of each session. Clients will be provided with a receipt for service, which will include the therapist's name, designation, and registration number. Payment is accepted by e-transfer only.",
     },
 
     {
