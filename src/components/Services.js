@@ -26,7 +26,7 @@ const Services = () => {
                     <div>
                         <i className="fa-solid fa-user"></i>
                         <h3>Individual Counselling Session</h3>
-                        <p>1-on-1 virtual sessions at 50 minutes in length.</p>
+                        <p>1-on-1 virtual session at 50 minutes in length.</p>
                         <p>Cost of session: $175.00</p>
                         <button>
                             <a href="https://portal.owlpractice.ca/therapyintheclouds/booking?therapist_id=1&location_id=1&rate_id=&day=2022-12-21&time=&video_session=0">
@@ -40,7 +40,7 @@ const Services = () => {
                     <div>
                         <i className="fa-solid fa-user-group"></i>
                         <h3>Couples Counselling Session</h3>
-                        <p>A virtual couples sessions at 50 minutes in length.</p>
+                        <p>A virtual couples session at 50 minutes in length.</p>
                         <p>Cost of session: $185.00</p>
                         <button>
                             {" "}
