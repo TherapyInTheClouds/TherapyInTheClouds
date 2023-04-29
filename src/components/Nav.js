@@ -12,6 +12,19 @@ const Nav = (props) => {
       setActive(!active)
    }
 
+   const routeToFounder = () => {
+      console.log('routeTo founder is running')
+      scrollToId('meetTheFounder')
+   }
+
+   function scrollToId(id) {
+      console.log('scroll to id is running')
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
    return (
       <>
          {/* Nav Bar */}
@@ -30,11 +43,12 @@ const Nav = (props) => {
                <div className="navBar">
                   <ul>
                      <li><Link to="/">Home</Link></li>
-                     <li><a href="#meetTheFounder">Meet The Founder</a></li>
+                     <li><Link to="/meetTheFounder">Meet The Founder</Link></li>
                      <li><Link to="/services">Services</Link></li>
                      <li><Link to="/faq">FAQ</Link></li>
                      <li> <Link to="/policy">Privacy Policy</Link></li>
                      <li> <Link to="/contact">Contact Us</Link></li>
+                   
                   </ul>
                </div>
             </div>
@@ -51,7 +65,7 @@ const Nav = (props) => {
             <nav>
                <ul>
                   <li><Link to="/" onClick={toggleClass}>Home</Link></li>
-                  <li><a  onClick={toggleClass} href="#meetTheFounder">Meet The Founder</a></li>
+                  <li><Link onClick={toggleClass} to='/meetTheFounder'>Meet The Founder</Link></li>
                   <li><Link to="/services" onClick={toggleClass}>Services</Link></li>
                   <li><Link to="/faq" onClick={toggleClass}>FAQ</Link></li>
                   <li> <Link to="/policy" onClick={toggleClass}>Privacy Policy</Link></li>

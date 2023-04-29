@@ -1,7 +1,13 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
+import {useLayoutEffect } from "react";
 
 const Faq = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const [showAnswer, setShowAnswer] = useState(null);
 
   const displayAnswer = (i) => {
