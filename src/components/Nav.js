@@ -12,18 +12,6 @@ const Nav = (props) => {
       setActive(!active)
    }
 
-   const routeToFounder = () => {
-      console.log('routeTo founder is running')
-      scrollToId('meetTheFounder')
-   }
-
-   function scrollToId(id) {
-      console.log('scroll to id is running')
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
 
    return (
       <>
