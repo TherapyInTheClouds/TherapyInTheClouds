@@ -29,7 +29,7 @@ const LandingPage = () => {
 
       <section className="headline wrapper">
         <p>
-          Therapy In the Clouds is a virtual private practice offering
+          Therapy in the Clouds is a virtual private practice offering
           psychotherapy and counselling services across the province of Ontario.
           We work with you to unpack the lens through which you see yourself
           today, to change how you view yourself tomorrow.
